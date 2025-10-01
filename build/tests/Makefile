@@ -209,6 +209,30 @@ unit_tests/main.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.s
 .PHONY : unit_tests/main.cpp.s
 
+unit_tests/test_agents.o: unit_tests/test_agents.cpp.o
+.PHONY : unit_tests/test_agents.o
+
+# target to build an object file
+unit_tests/test_agents.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_agents.cpp.o
+.PHONY : unit_tests/test_agents.cpp.o
+
+unit_tests/test_agents.i: unit_tests/test_agents.cpp.i
+.PHONY : unit_tests/test_agents.i
+
+# target to preprocess a source file
+unit_tests/test_agents.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_agents.cpp.i
+.PHONY : unit_tests/test_agents.cpp.i
+
+unit_tests/test_agents.s: unit_tests/test_agents.cpp.s
+.PHONY : unit_tests/test_agents.s
+
+# target to generate assembly for a file
+unit_tests/test_agents.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_agents.cpp.s
+.PHONY : unit_tests/test_agents.cpp.s
+
 unit_tests/test_base_llm.o: unit_tests/test_base_llm.cpp.o
 .PHONY : unit_tests/test_base_llm.o
 
@@ -449,6 +473,30 @@ unit_tests/test_logging.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_logging.cpp.s
 .PHONY : unit_tests/test_logging.cpp.s
 
+unit_tests/test_memory.o: unit_tests/test_memory.cpp.o
+.PHONY : unit_tests/test_memory.o
+
+# target to build an object file
+unit_tests/test_memory.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o
+.PHONY : unit_tests/test_memory.cpp.o
+
+unit_tests/test_memory.i: unit_tests/test_memory.cpp.i
+.PHONY : unit_tests/test_memory.i
+
+# target to preprocess a source file
+unit_tests/test_memory.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.i
+.PHONY : unit_tests/test_memory.cpp.i
+
+unit_tests/test_memory.s: unit_tests/test_memory.cpp.s
+.PHONY : unit_tests/test_memory.s
+
+# target to generate assembly for a file
+unit_tests/test_memory.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.s
+.PHONY : unit_tests/test_memory.cpp.s
+
 unit_tests/test_memory_pool.o: unit_tests/test_memory_pool.cpp.o
 .PHONY : unit_tests/test_memory_pool.o
 
@@ -496,6 +544,30 @@ unit_tests/test_openai_llm.s: unit_tests/test_openai_llm.cpp.s
 unit_tests/test_openai_llm.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_openai_llm.cpp.s
 .PHONY : unit_tests/test_openai_llm.cpp.s
+
+unit_tests/test_prompt_templates.o: unit_tests/test_prompt_templates.cpp.o
+.PHONY : unit_tests/test_prompt_templates.o
+
+# target to build an object file
+unit_tests/test_prompt_templates.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o
+.PHONY : unit_tests/test_prompt_templates.cpp.o
+
+unit_tests/test_prompt_templates.i: unit_tests/test_prompt_templates.cpp.i
+.PHONY : unit_tests/test_prompt_templates.i
+
+# target to preprocess a source file
+unit_tests/test_prompt_templates.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.i
+.PHONY : unit_tests/test_prompt_templates.cpp.i
+
+unit_tests/test_prompt_templates.s: unit_tests/test_prompt_templates.cpp.s
+.PHONY : unit_tests/test_prompt_templates.s
+
+# target to generate assembly for a file
+unit_tests/test_prompt_templates.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.s
+.PHONY : unit_tests/test_prompt_templates.cpp.s
 
 unit_tests/test_simd_ops.o: unit_tests/test_simd_ops.cpp.o
 .PHONY : unit_tests/test_simd_ops.o
@@ -610,6 +682,9 @@ help:
 	@echo "... unit_tests/main.o"
 	@echo "... unit_tests/main.i"
 	@echo "... unit_tests/main.s"
+	@echo "... unit_tests/test_agents.o"
+	@echo "... unit_tests/test_agents.i"
+	@echo "... unit_tests/test_agents.s"
 	@echo "... unit_tests/test_base_llm.o"
 	@echo "... unit_tests/test_base_llm.i"
 	@echo "... unit_tests/test_base_llm.s"
@@ -640,12 +715,18 @@ help:
 	@echo "... unit_tests/test_logging.o"
 	@echo "... unit_tests/test_logging.i"
 	@echo "... unit_tests/test_logging.s"
+	@echo "... unit_tests/test_memory.o"
+	@echo "... unit_tests/test_memory.i"
+	@echo "... unit_tests/test_memory.s"
 	@echo "... unit_tests/test_memory_pool.o"
 	@echo "... unit_tests/test_memory_pool.i"
 	@echo "... unit_tests/test_memory_pool.s"
 	@echo "... unit_tests/test_openai_llm.o"
 	@echo "... unit_tests/test_openai_llm.i"
 	@echo "... unit_tests/test_openai_llm.s"
+	@echo "... unit_tests/test_prompt_templates.o"
+	@echo "... unit_tests/test_prompt_templates.i"
+	@echo "... unit_tests/test_prompt_templates.s"
 	@echo "... unit_tests/test_simd_ops.o"
 	@echo "... unit_tests/test_simd_ops.i"
 	@echo "... unit_tests/test_simd_ops.s"

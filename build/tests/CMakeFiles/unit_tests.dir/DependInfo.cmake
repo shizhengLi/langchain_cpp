@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/main.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o.d"
+  "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_agents.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_agents.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_agents.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_base_llm.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_llm.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_llm.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_base_retriever.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_retriever.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_retriever.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_bm25_retriever.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_retriever.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_retriever.cpp.o.d"
@@ -19,8 +20,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_hybrid_retriever.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_hybrid_retriever.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_hybrid_retriever.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_inverted_index_retriever.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_logging.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_logging.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_logging.cpp.o.d"
+  "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_memory.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_memory_pool.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory_pool.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory_pool.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_openai_llm.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_openai_llm.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_openai_llm.cpp.o.d"
+  "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_prompt_templates.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_simd_ops.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_simd_ops.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_simd_ops.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_simple_vector_store.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_simple_vector_store.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_simple_vector_store.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_text_processor.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.o.d"

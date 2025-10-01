@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/langchain_cpp.dir/src/agents/agent.cpp.o"
+  "CMakeFiles/langchain_cpp.dir/src/agents/agent.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o"
   "CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o"
@@ -11,6 +13,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o"
   "CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o.d"
+  "CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o"
+  "CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o.d"
+  "CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o"
+  "CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.o"
   "CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o"

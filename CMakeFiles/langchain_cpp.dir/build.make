@@ -282,6 +282,48 @@ CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/sequential_chain.cpp -o CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.s
 
+CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o: src/prompts/prompt_template.cpp
+CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/prompts/prompt_template.cpp
+
+CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/prompts/prompt_template.cpp > CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/prompts/prompt_template.cpp -o CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.s
+
+CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o: src/memory/memory.cpp
+CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/memory/memory.cpp
+
+CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/memory/memory.cpp > CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/memory/memory.cpp -o CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.s
+
+CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o: src/metrics/metrics.cpp
+CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/metrics/metrics.cpp
+
+CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/metrics/metrics.cpp > CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/metrics/metrics.cpp -o CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.s
+
 # Object files for target langchain_cpp
 langchain_cpp_OBJECTS = \
 "CMakeFiles/langchain_cpp.dir/src/core/types.cpp.o" \
@@ -298,7 +340,10 @@ langchain_cpp_OBJECTS = \
 "CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o" \
 "CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o" \
 "CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o" \
-"CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o"
+"CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o"
 
 # External object files for target langchain_cpp
 langchain_cpp_EXTERNAL_OBJECTS =
@@ -318,9 +363,12 @@ liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/build.make
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library liblangchain_cpp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library liblangchain_cpp.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/langchain_cpp.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/langchain_cpp.dir/link.txt --verbose=$(VERBOSE)
 

@@ -223,6 +223,30 @@ unit_tests/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
 .PHONY : unit_tests/fast
 
+src/agents/agent.o: src/agents/agent.cpp.o
+.PHONY : src/agents/agent.o
+
+# target to build an object file
+src/agents/agent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/agents/agent.cpp.o
+.PHONY : src/agents/agent.cpp.o
+
+src/agents/agent.i: src/agents/agent.cpp.i
+.PHONY : src/agents/agent.i
+
+# target to preprocess a source file
+src/agents/agent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/agents/agent.cpp.i
+.PHONY : src/agents/agent.cpp.i
+
+src/agents/agent.s: src/agents/agent.cpp.s
+.PHONY : src/agents/agent.s
+
+# target to generate assembly for a file
+src/agents/agent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/agents/agent.cpp.s
+.PHONY : src/agents/agent.cpp.s
+
 src/chains/llm_chain.o: src/chains/llm_chain.cpp.o
 .PHONY : src/chains/llm_chain.o
 
@@ -366,6 +390,54 @@ src/llm/openai_llm.s: src/llm/openai_llm.cpp.s
 src/llm/openai_llm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.s
 .PHONY : src/llm/openai_llm.cpp.s
+
+src/memory/memory.o: src/memory/memory.cpp.o
+.PHONY : src/memory/memory.o
+
+# target to build an object file
+src/memory/memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o
+.PHONY : src/memory/memory.cpp.o
+
+src/memory/memory.i: src/memory/memory.cpp.i
+.PHONY : src/memory/memory.i
+
+# target to preprocess a source file
+src/memory/memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.i
+.PHONY : src/memory/memory.cpp.i
+
+src/memory/memory.s: src/memory/memory.cpp.s
+.PHONY : src/memory/memory.s
+
+# target to generate assembly for a file
+src/memory/memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.s
+.PHONY : src/memory/memory.cpp.s
+
+src/prompts/prompt_template.o: src/prompts/prompt_template.cpp.o
+.PHONY : src/prompts/prompt_template.o
+
+# target to build an object file
+src/prompts/prompt_template.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o
+.PHONY : src/prompts/prompt_template.cpp.o
+
+src/prompts/prompt_template.i: src/prompts/prompt_template.cpp.i
+.PHONY : src/prompts/prompt_template.i
+
+# target to preprocess a source file
+src/prompts/prompt_template.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.i
+.PHONY : src/prompts/prompt_template.cpp.i
+
+src/prompts/prompt_template.s: src/prompts/prompt_template.cpp.s
+.PHONY : src/prompts/prompt_template.s
+
+# target to generate assembly for a file
+src/prompts/prompt_template.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.s
+.PHONY : src/prompts/prompt_template.cpp.s
 
 src/retrievers/bm25_retriever.o: src/retrievers/bm25_retriever.cpp.o
 .PHONY : src/retrievers/bm25_retriever.o
@@ -600,6 +672,9 @@ help:
 	@echo "... Catch2WithMain"
 	@echo "... langchain_cpp"
 	@echo "... unit_tests"
+	@echo "... src/agents/agent.o"
+	@echo "... src/agents/agent.i"
+	@echo "... src/agents/agent.s"
 	@echo "... src/chains/llm_chain.o"
 	@echo "... src/chains/llm_chain.i"
 	@echo "... src/chains/llm_chain.s"
@@ -618,6 +693,12 @@ help:
 	@echo "... src/llm/openai_llm.o"
 	@echo "... src/llm/openai_llm.i"
 	@echo "... src/llm/openai_llm.s"
+	@echo "... src/memory/memory.o"
+	@echo "... src/memory/memory.i"
+	@echo "... src/memory/memory.s"
+	@echo "... src/prompts/prompt_template.o"
+	@echo "... src/prompts/prompt_template.i"
+	@echo "... src/prompts/prompt_template.s"
 	@echo "... src/retrievers/bm25_retriever.o"
 	@echo "... src/retrievers/bm25_retriever.i"
 	@echo "... src/retrievers/bm25_retriever.s"

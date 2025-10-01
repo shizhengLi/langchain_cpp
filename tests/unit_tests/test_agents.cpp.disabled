@@ -1,0 +1,570 @@
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/catch_all.hpp>
+#include "langchain/agents/agent.hpp"
+#include "langchain/memory/memory.hpp"
+#include <memory>
+
+using namespace langchain::agents;
+using namespace langchain::memory;
+
+// Mock LLM for testing
+class MockLLM : public langchain::llm::BaseLLM {
+public:
+    MockLLM() = default;
+
+    langchain::llm::LLMResponse complete(
+        const std::string& prompt,
+        const std::optional<langchain::llm::LLMConfig>& config = std::nullopt
+    ) override {
+        langchain::llm::LLMResponse response;
+        response.content = "Mock response for: " + prompt;
+        response.success = true;
+        return response;
+    }
+
+    langchain::llm::LLMResponse chat(
+        const std::vector<langchain::llm::ChatMessage>& messages,
+        const std::optional<langchain::llm::LLMConfig>& config = std::nullopt
+    ) override {
+        langchain::llm::LLMResponse response;
+        response.content = "Mock chat response";
+        response.success = true;
+        return response;
+    }
+
+    size_t count_tokens(const std::string& text) const override {
+        return (text.length() + 3) / 4; // Simple approximation
+    }
+
+    std::vector<std::string> get_supported_models() const override {
+        return {"mock-model"};
+    }
+
+    bool is_model_supported(const std::string& model) const override {
+        return model == "mock-model";
+    }
+
+    std::string get_provider() const override {
+        return "mock";
+    }
+
+    const langchain::llm::LLMConfig& get_config() const override {
+        static langchain::llm::LLMConfig default_config;
+        return default_config;
+    }
+
+    void update_config(const langchain::llm::LLMConfig& new_config) override {
+        // Mock implementation - does nothing
+    }
+
+    void validate_config(const langchain::llm::LLMConfig& config) const override {
+        // Mock implementation - always valid
+    }
+
+    std::unordered_map<std::string, bool> get_capabilities() const override {
+        return {
+            {"completion", true},
+            {"chat", true},
+            {"streaming", false},
+            {"function_calling", false}
+        };
+    }
+
+    std::unique_ptr<langchain::llm::BaseLLM> create() const override {
+        return std::make_unique<MockLLM>();
+    }
+
+    std::unique_ptr<langchain::llm::BaseLLM> create(const langchain::llm::LLMConfig& config) const override {
+        return std::make_unique<MockLLM>();
+    }
+};
+
+// Test agent implementation for testing BaseAgent functionality
+class TestAgent : public BaseAgent {
+public:
+    TestAgent(std::shared_ptr<langchain::llm::BaseLLM> llm,
+              std::vector<std::shared_ptr<BaseTool>> tools = {},
+              const AgentConfig& config = AgentConfig{})
+        : BaseAgent(std::move(llm), std::move(tools), config) {}
+
+    std::string run(const std::string& input) override {
+        return "Test response for: " + input;
+    }
+
+    std::pair<std::string, std::vector<AgentStep>> run_with_steps(const std::string& input) override {
+        std::vector<AgentStep> steps;
+        steps.emplace_back(AgentStep::StepType::FINAL_ANSWER, "Test response for: " + input);
+        return {"Test response for: " + input, steps};
+    }
+
+protected:
+    std::pair<std::string, std::string> parse_action(const std::string& response) override {
+        return {"", ""};
+    }
+};
+
+TEST_CASE("FunctionTool basic functionality", "[agents][tool]") {
+    SECTION("Tool with simple function") {
+        auto func = [](const std::string& input) -> std::string {
+            return "Processed: " + input;
+        };
+
+        FunctionTool tool("test_tool", "A test tool", "string", func);
+
+        REQUIRE(tool.name() == "test_tool");
+        REQUIRE(tool.description() == "A test tool");
+        REQUIRE(tool.input_schema() == "string");
+        REQUIRE(tool.run("hello") == "Processed: hello");
+        REQUIRE(tool.category() == "general");
+        REQUIRE_FALSE(tool.is_async());
+    }
+
+    SECTION("Tool with no function") {
+        FunctionTool tool("broken_tool", "Tool without function", "string", nullptr);
+
+        std::string result = tool.run("test");
+        REQUIRE(result.find("Error: No function defined") != std::string::npos);
+    }
+
+    SECTION("Tool function throws exception") {
+        auto func = [](const std::string& input) -> std::string {
+            throw std::runtime_error("Function error");
+        };
+
+        FunctionTool tool("error_tool", "Tool that errors", "string", func);
+
+        std::string result = tool.run("test");
+        REQUIRE(result.find("Error: Function error") != std::string::npos);
+    }
+}
+
+TEST_CASE("BaseAgent functionality", "[agents][base]") {
+    SECTION("Agent initialization with tools") {
+        auto mock_llm = std::make_shared<MockLLM>();
+
+        auto tool1 = std::make_shared<FunctionTool>(
+            "tool1", "First tool", "string",
+            [](const std::string& s) { return "Result 1: " + s; }
+        );
+
+        auto tool2 = std::make_shared<FunctionTool>(
+            "tool2", "Second tool", "string",
+            [](const std::string& s) { return "Result 2: " + s; }
+        );
+
+        AgentConfig config;
+        config.max_iterations = 5;
+
+        TestAgent agent(mock_llm, {tool1, tool2}, config);
+
+        REQUIRE(agent.get_tools().size() == 2);
+        REQUIRE(agent.get_tools()[0]->name() == "tool1");
+        REQUIRE(agent.get_tools()[1]->name() == "tool2");
+    }
+
+    SECTION("Add and remove tools") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        TestAgent agent(mock_llm);
+
+        REQUIRE(agent.get_tools().empty());
+
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        agent.add_tool(tool);
+        REQUIRE(agent.get_tools().size() == 1);
+        REQUIRE(agent.get_tools()[0]->name() == "test_tool");
+
+        agent.remove_tool("test_tool");
+        REQUIRE(agent.get_tools().empty());
+    }
+
+    SECTION("Get tools info") {
+        auto mock_llm = std::make_shared<MockLLM>();
+
+        auto tool = std::make_shared<FunctionTool>(
+            "search", "Search for information", "string",
+            [](const std::string& s) { return "Results for " + s; }
+        );
+
+        TestAgent agent(mock_llm, {tool});
+
+        std::string info = agent.get_tools_info();
+        REQUIRE(info.find("search") != std::string::npos);
+        REQUIRE(info.find("Search for information") != std::string::npos);
+    }
+
+    SECTION("Agent run and run_with_steps") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        TestAgent agent(mock_llm);
+
+        std::string result = agent.run("test input");
+        REQUIRE(result == "Test response for: test input");
+
+        auto [step_result, steps] = agent.run_with_steps("test input");
+        REQUIRE(step_result == "Test response for: test input");
+        REQUIRE(steps.size() == 1);
+        REQUIRE(steps[0].type == AgentStep::StepType::FINAL_ANSWER);
+    }
+}
+
+TEST_CASE("ReActAgent", "[agents][react]") {
+    SECTION("Basic ReAct agent") {
+        auto mock_llm = std::make_shared<MockLLM>();
+
+        auto tool = std::make_shared<FunctionTool>(
+            "calculator", "Calculate math expressions", "string",
+            [](const std::string& s) { return std::to_string(std::stoi(s) * 2); }
+        );
+
+        ReActAgent agent(mock_llm, {tool});
+
+        std::string result = agent.run("What is 2*2?");
+        REQUIRE(result.find("Mock response") != std::string::npos);
+    }
+
+    SECTION("ReAct agent with steps") {
+        auto mock_llm = std::make_shared<MockLLM>();
+
+        auto tool = std::make_shared<FunctionTool>(
+            "search", "Search for information", "string",
+            [](const std::string& s) { return "Search results for " + s; }
+        );
+
+        ReActAgent agent(mock_llm, {tool});
+
+        auto [result, steps] = agent.run_with_steps("Search for AI information");
+
+        REQUIRE(!result.empty());
+        REQUIRE(!steps.empty());
+    }
+
+    SECTION("Create default prompt") {
+        auto prompt = ReActAgent::create_default_prompt();
+        REQUIRE(prompt != nullptr);
+
+        std::unordered_map<std::string, std::string> vars = {
+            {"input", "test question"},
+            {"tools_info", "Available tools:\n- test: Test tool"}
+        };
+
+        std::string formatted = prompt->format(vars);
+        REQUIRE(formatted.find("test question") != std::string::npos);
+        REQUIRE(formatted.find("Available tools") != std::string::npos);
+    }
+}
+
+TEST_CASE("ZeroShotReactAgent", "[agents][zero_shot]") {
+    SECTION("Basic zero-shot agent") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        ZeroShotReactAgent agent(mock_llm, {tool});
+
+        std::string result = agent.run("What is the capital of France?");
+        REQUIRE(result.find("Mock response") != std::string::npos);
+    }
+
+    SECTION("Zero-shot agent with steps") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        ZeroShotReactAgent agent(mock_llm, {tool});
+
+        auto [result, steps] = agent.run_with_steps("Test question");
+
+        REQUIRE(!result.empty());
+        REQUIRE(steps.size() == 1); // Should have one final answer step
+        REQUIRE(steps[0].type == AgentStep::StepType::FINAL_ANSWER);
+    }
+
+    SECTION("Create default prompt") {
+        auto prompt = ZeroShotReactAgent::create_default_prompt();
+        REQUIRE(prompt != nullptr);
+
+        std::unordered_map<std::string, std::string> vars = {{"input", "test"}};
+        std::string formatted = prompt->format(vars);
+
+        REQUIRE(formatted.find("test") != std::string::npos);
+        REQUIRE(formatted.find("Answer:") != std::string::npos);
+    }
+}
+
+TEST_CASE("ConversationalAgent", "[agents][conversational]") {
+    SECTION("Basic conversational agent") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        ConversationalAgent agent(mock_llm, {tool});
+
+        std::string result = agent.run("Hello, how are you?");
+        REQUIRE(result.find("Mock response") != std::string::npos);
+    }
+
+    SECTION("Conversational agent with memory") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        auto memory = std::make_unique<BufferMemory>();
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        ConversationalAgent agent(mock_llm, {tool}, std::move(memory));
+
+        std::string result1 = agent.run("Hello");
+        std::string result2 = agent.run("How are you?");
+
+        REQUIRE(!result1.empty());
+        REQUIRE(!result2.empty());
+    }
+
+    SECTION("Create default prompt") {
+        auto prompt = ConversationalAgent::create_default_prompt();
+        REQUIRE(prompt != nullptr);
+
+        std::unordered_map<std::string, std::string> vars = {
+            {"input", "test"},
+            {"history", "Previous conversation"}
+        };
+
+        std::string formatted = prompt->format(vars);
+        REQUIRE(formatted.find("test") != std::string::npos);
+        REQUIRE(formatted.find("Previous conversation") != std::string::npos);
+    }
+}
+
+TEST_CASE("MultiAgentCoordinator", "[agents][coordinator]") {
+    SECTION("Register and use agents") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        MultiAgentCoordinator coordinator(mock_llm);
+
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        auto agent1 = std::make_shared<ReActAgent>(mock_llm, {tool});
+        auto agent2 = std::make_shared<ZeroShotReactAgent>(mock_llm, {tool});
+
+        coordinator.register_agent("react_agent", agent1, "ReAct agent for complex tasks");
+        coordinator.register_agent("zero_shot_agent", agent2, "Zero-shot agent for simple tasks");
+
+        auto available_agents = coordinator.get_available_agents();
+        REQUIRE(available_agents.size() == 2);
+        REQUIRE(std::find(available_agents.begin(), available_agents.end(), "react_agent") != available_agents.end());
+        REQUIRE(std::find(available_agents.begin(), available_agents.end(), "zero_shot_agent") != available_agents.end());
+    }
+
+    SECTION("Get agent info") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        MultiAgentCoordinator coordinator(mock_llm);
+
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        auto agent = std::make_shared<ReActAgent>(mock_llm, {tool});
+        coordinator.register_agent("test_agent", agent, "Test agent", {"search", "calculate"});
+
+        std::string info = coordinator.get_agent_info("test_agent");
+        REQUIRE(info.find("test_agent") != std::string::npos);
+        REQUIRE(info.find("Test agent") != std::string::npos);
+        REQUIRE(info.find("search") != std::string::npos);
+        REQUIRE(info.find("calculate") != std::string::npos);
+    }
+
+    SECTION("Route and execute task") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        MultiAgentCoordinator coordinator(mock_llm);
+
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        auto agent = std::make_shared<ReActAgent>(mock_llm, {tool});
+        coordinator.register_agent("test_agent", agent, "Test agent");
+
+        std::string result = coordinator.route_and_execute("Test task");
+        REQUIRE(result.find("Mock response") != std::string::npos);
+    }
+
+    SECTION("Handle no suitable agent") {
+        auto mock_llm = std::make_shared<MockLLM>();
+        MultiAgentCoordinator coordinator(mock_llm);
+
+        std::string result = coordinator.route_and_execute("Test task");
+        REQUIRE(result.find("No suitable agent found") != std::string::npos);
+    }
+}
+
+TEST_CASE("Built-in tools", "[agents][tools]") {
+    SECTION("Search tool") {
+        auto search_func = [](const std::string& query) -> std::vector<std::string> {
+            return {"Result 1 for " + query, "Result 2 for " + query};
+        };
+
+        tools::SearchTool tool(search_func);
+
+        REQUIRE(tool.name() == "search");
+        REQUIRE(tool.description() == "Search for information using a query string");
+        REQUIRE(tool.input_schema().find("string") != std::string::npos);
+
+        std::string result = tool.run("test query");
+        REQUIRE(result.find("test query") != std::string::npos);
+        REQUIRE(result.find("Result 1") != std::string::npos);
+        REQUIRE(result.find("Result 2") != std::string::npos);
+    }
+
+    SECTION("Calculator tool") {
+        auto tool = tools::create_calculator_tool();
+
+        REQUIRE(tool->name() == "calculator");
+        REQUIRE(tool->description() == "Perform mathematical calculations");
+
+        std::string result = tool->run("2+2");
+        REQUIRE(result.find("2+2") != std::string::npos);
+    }
+
+    SECTION("File tool") {
+        auto tool = tools::create_file_tool();
+
+        REQUIRE(tool->name() == "file_operations");
+        REQUIRE(tool->description() == "Perform file operations like read, write, list");
+
+        std::string result = tool->run("read file.txt");
+        REQUIRE(result.find("file.txt") != std::string::npos);
+    }
+}
+
+TEST_CASE("AgentFactory", "[agents][factory]") {
+    auto mock_llm = std::make_shared<MockLLM>();
+
+    SECTION("Create ReAct agent") {
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        auto agent = AgentFactory::create_react_agent(mock_llm, {tool});
+        REQUIRE(agent != nullptr);
+    }
+
+    SECTION("Create zero-shot react agent") {
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        auto agent = AgentFactory::create_zero_shot_react_agent(mock_llm, {tool});
+        REQUIRE(agent != nullptr);
+    }
+
+    SECTION("Create conversational agent") {
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        auto agent = AgentFactory::create_conversational_agent(mock_llm, {tool});
+        REQUIRE(agent != nullptr);
+    }
+
+    SECTION("Create agent by type") {
+        auto tool = std::make_shared<FunctionTool>(
+            "test_tool", "Test tool", "string",
+            [](const std::string& s) { return s; }
+        );
+
+        auto agent = AgentFactory::create_agent(
+            AgentFactory::AgentType::REACT,
+            mock_llm,
+            {tool}
+        );
+        REQUIRE(agent != nullptr);
+    }
+}
+
+TEST_CASE("Agent configuration validation", "[agents][config]") {
+    SECTION("Valid configuration") {
+        AgentConfig config;
+        config.max_iterations = 10;
+        config.max_execution_time = std::chrono::seconds(60);
+
+        REQUIRE_NOTHROW(config.validate());
+    }
+
+    SECTION("Invalid max_iterations") {
+        AgentConfig config;
+        config.max_iterations = 0;
+
+        REQUIRE_THROWS_AS(config.validate(), std::invalid_argument);
+        REQUIRE_THROWS_WITH(config.validate(), "max_iterations must be greater than 0");
+    }
+
+    SECTION("Invalid max_execution_time") {
+        AgentConfig config;
+        config.max_execution_time = std::chrono::seconds(0);
+
+        REQUIRE_THROWS_AS(config.validate(), std::invalid_argument);
+        REQUIRE_THROWS_WITH(config.validate(), "max_execution_time must be positive");
+    }
+}
+
+TEST_CASE("ActionResult", "[agents][action]") {
+    SECTION("Successful action result") {
+        ActionResult result("calculator", "2+2", "4");
+
+        REQUIRE(result.tool_name == "calculator");
+        REQUIRE(result.tool_input == "2+2");
+        REQUIRE(result.output == "4");
+        REQUIRE(result.success);
+    }
+
+    SECTION("Failed action result") {
+        ActionResult result("broken_tool", "input", "Error message");
+        result.success = false;
+
+        REQUIRE_FALSE(result.success);
+        REQUIRE(result.output == "Error message");
+    }
+}
+
+TEST_CASE("AgentStep", "[agents][step]") {
+    SECTION("Thought step") {
+        AgentStep step(AgentStep::StepType::THOUGHT, "I need to calculate something");
+
+        REQUIRE(step.type == AgentStep::StepType::THOUGHT);
+        REQUIRE(step.content == "I need to calculate something");
+        REQUIRE_FALSE(step.action_result.has_value());
+    }
+
+    SECTION("Action step") {
+        ActionResult action("calculator", "2+2", "4");
+        AgentStep step(AgentStep::StepType::ACTION, "Calculating 2+2", action);
+
+        REQUIRE(step.type == AgentStep::StepType::ACTION);
+        REQUIRE(step.content == "Calculating 2+2");
+        REQUIRE(step.action_result.has_value());
+        REQUIRE(step.action_result->tool_name == "calculator");
+    }
+
+    SECTION("Final answer step") {
+        AgentStep step(AgentStep::StepType::FINAL_ANSWER, "The answer is 4");
+
+        REQUIRE(step.type == AgentStep::StepType::FINAL_ANSWER);
+        REQUIRE(step.content == "The answer is 4");
+    }
+}

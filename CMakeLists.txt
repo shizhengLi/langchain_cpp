@@ -39,6 +39,9 @@ set(SOURCES
   src/llm/openai_llm.cpp
   src/chains/llm_chain.cpp
   src/chains/sequential_chain.cpp
+  src/prompts/prompt_template.cpp
+  src/memory/memory.cpp
+  src/metrics/metrics.cpp
 )
 
 # Header files
@@ -62,6 +65,9 @@ set(HEADERS
   include/langchain/chains/base_chain.hpp
   include/langchain/chains/llm_chain.hpp
   include/langchain/chains/sequential_chain.hpp
+  include/langchain/prompts/prompt_template.hpp
+  include/langchain/memory/memory.hpp
+  include/langchain/metrics/metrics.hpp
 )
 
 # Create main library

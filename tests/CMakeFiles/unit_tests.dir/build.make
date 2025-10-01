@@ -296,10 +296,52 @@ tests/CMakeFiles/unit_tests.dir/unit_tests/test_chains.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/unit_tests/test_chains.cpp.s"
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_chains.cpp -o CMakeFiles/unit_tests.dir/unit_tests/test_chains.cpp.s
 
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o: tests/unit_tests/test_prompt_templates.cpp
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o -MF CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o.d -o CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_prompt_templates.cpp
+
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.i"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_prompt_templates.cpp > CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.i
+
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.s"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_prompt_templates.cpp -o CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.s
+
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o: tests/unit_tests/test_memory.cpp
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o -MF CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o.d -o CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_memory.cpp
+
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.i"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_memory.cpp > CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.i
+
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.s"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_memory.cpp -o CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.s
+
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o: tests/unit_tests/test_metrics.cpp
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object tests/CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o -MF CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o.d -o CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_metrics.cpp
+
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.i"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_metrics.cpp > CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.i
+
+tests/CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.s"
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_metrics.cpp -o CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.s
+
 tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o: tests/unit_tests/main.cpp
 tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o: tests/CMakeFiles/unit_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o"
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o -MF CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o.d -o CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/main.cpp
 
 tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.i: cmake_force
@@ -328,6 +370,9 @@ unit_tests_OBJECTS = \
 "CMakeFiles/unit_tests.dir/unit_tests/test_base_llm.cpp.o" \
 "CMakeFiles/unit_tests.dir/unit_tests/test_openai_llm.cpp.o" \
 "CMakeFiles/unit_tests.dir/unit_tests/test_chains.cpp.o" \
+"CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o" \
+"CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o" \
+"CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o" \
 "CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o"
 
 # External object files for target unit_tests
@@ -349,6 +394,9 @@ tests/unit_tests: tests/CMakeFiles/unit_tests.dir/unit_tests/test_hybrid_retriev
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_llm.cpp.o
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/unit_tests/test_openai_llm.cpp.o
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/unit_tests/test_chains.cpp.o
+tests/unit_tests: tests/CMakeFiles/unit_tests.dir/unit_tests/test_prompt_templates.cpp.o
+tests/unit_tests: tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory.cpp.o
+tests/unit_tests: tests/CMakeFiles/unit_tests.dir/unit_tests/test_metrics.cpp.o
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/build.make
 tests/unit_tests: liblangchain_cpp.a
@@ -356,7 +404,7 @@ tests/unit_tests: _deps/catch2-build/src/libCatch2Main.a
 tests/unit_tests: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
 tests/unit_tests: _deps/catch2-build/src/libCatch2.a
 tests/unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable unit_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable unit_tests"
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

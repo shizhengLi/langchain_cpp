@@ -367,6 +367,78 @@ src/llm/openai_llm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.s
 .PHONY : src/llm/openai_llm.cpp.s
 
+src/memory/memory.o: src/memory/memory.cpp.o
+.PHONY : src/memory/memory.o
+
+# target to build an object file
+src/memory/memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.o
+.PHONY : src/memory/memory.cpp.o
+
+src/memory/memory.i: src/memory/memory.cpp.i
+.PHONY : src/memory/memory.i
+
+# target to preprocess a source file
+src/memory/memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.i
+.PHONY : src/memory/memory.cpp.i
+
+src/memory/memory.s: src/memory/memory.cpp.s
+.PHONY : src/memory/memory.s
+
+# target to generate assembly for a file
+src/memory/memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.s
+.PHONY : src/memory/memory.cpp.s
+
+src/metrics/metrics.o: src/metrics/metrics.cpp.o
+.PHONY : src/metrics/metrics.o
+
+# target to build an object file
+src/metrics/metrics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o
+.PHONY : src/metrics/metrics.cpp.o
+
+src/metrics/metrics.i: src/metrics/metrics.cpp.i
+.PHONY : src/metrics/metrics.i
+
+# target to preprocess a source file
+src/metrics/metrics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.i
+.PHONY : src/metrics/metrics.cpp.i
+
+src/metrics/metrics.s: src/metrics/metrics.cpp.s
+.PHONY : src/metrics/metrics.s
+
+# target to generate assembly for a file
+src/metrics/metrics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.s
+.PHONY : src/metrics/metrics.cpp.s
+
+src/prompts/prompt_template.o: src/prompts/prompt_template.cpp.o
+.PHONY : src/prompts/prompt_template.o
+
+# target to build an object file
+src/prompts/prompt_template.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.o
+.PHONY : src/prompts/prompt_template.cpp.o
+
+src/prompts/prompt_template.i: src/prompts/prompt_template.cpp.i
+.PHONY : src/prompts/prompt_template.i
+
+# target to preprocess a source file
+src/prompts/prompt_template.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.i
+.PHONY : src/prompts/prompt_template.cpp.i
+
+src/prompts/prompt_template.s: src/prompts/prompt_template.cpp.s
+.PHONY : src/prompts/prompt_template.s
+
+# target to generate assembly for a file
+src/prompts/prompt_template.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/prompts/prompt_template.cpp.s
+.PHONY : src/prompts/prompt_template.cpp.s
+
 src/retrievers/bm25_retriever.o: src/retrievers/bm25_retriever.cpp.o
 .PHONY : src/retrievers/bm25_retriever.o
 
@@ -618,6 +690,15 @@ help:
 	@echo "... src/llm/openai_llm.o"
 	@echo "... src/llm/openai_llm.i"
 	@echo "... src/llm/openai_llm.s"
+	@echo "... src/memory/memory.o"
+	@echo "... src/memory/memory.i"
+	@echo "... src/memory/memory.s"
+	@echo "... src/metrics/metrics.o"
+	@echo "... src/metrics/metrics.i"
+	@echo "... src/metrics/metrics.s"
+	@echo "... src/prompts/prompt_template.o"
+	@echo "... src/prompts/prompt_template.i"
+	@echo "... src/prompts/prompt_template.s"
 	@echo "... src/retrievers/bm25_retriever.o"
 	@echo "... src/retrievers/bm25_retriever.i"
 	@echo "... src/retrievers/bm25_retriever.s"

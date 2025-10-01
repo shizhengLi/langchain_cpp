@@ -19,6 +19,9 @@ target_sources(unit_tests PRIVATE
   unit_tests/test_base_llm.cpp
   unit_tests/test_openai_llm.cpp
   unit_tests/test_chains.cpp
+  unit_tests/test_prompt_templates.cpp
+  unit_tests/test_memory.cpp
+  unit_tests/test_metrics.cpp
     unit_tests/main.cpp
 )
 
