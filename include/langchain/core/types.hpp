@@ -8,6 +8,10 @@
 #include <chrono>
 #include <functional>
 #include <atomic>
+#include <any>
+#include <thread>
+#include <limits>
+#include <algorithm>
 
 namespace langchain {
 
@@ -27,7 +31,10 @@ struct Document {
     std::unordered_map<std::string, std::string> metadata;
     std::string id;
 
-    Document() = default;
+    Document() {
+        // Generate unique ID for default constructor
+        id = "doc_" + std::to_string(std::hash<std::string>{}("default_" + std::to_string(reinterpret_cast<uintptr_t>(this))));
+    }
     Document(const std::string& content,
              const std::unordered_map<std::string, std::string>& metadata = {})
         : content(content), metadata(metadata) {
@@ -97,8 +104,13 @@ struct RetrievalResult {
      * @return Top k documents
      */
     std::vector<RetrievedDocument> get_top_k(size_t k) const {
-        k = std::min(k, documents.size());
-        return std::vector<RetrievedDocument>(documents.begin(), documents.begin() + k);
+        std::vector<RetrievedDocument> sorted_docs = documents;
+        std::sort(sorted_docs.begin(), sorted_docs.end(),
+                  [](const RetrievedDocument& a, const RetrievedDocument& b) {
+                      return a.relevance_score > b.relevance_score;
+                  });
+        k = std::min(k, sorted_docs.size());
+        return std::vector<RetrievedDocument>(sorted_docs.begin(), sorted_docs.begin() + k);
     }
 
     /**

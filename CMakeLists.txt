@@ -11,26 +11,6 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
-# Compiler-specific options
-if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
-    target_compile_options(langchain_cpp PRIVATE
-        -O3
-        -march=native
-        -Wall
-        -Wextra
-        -Wpedantic
-        -Wno-unused-parameter
-        -flto
-    )
-    set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
-elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
-    target_compile_options(langchain_cpp PRIVATE
-        /O2
-        /permissive-
-        /W4
-        /WX
-    )
-endif()
 
 # Include directories
 include_directories(include)
@@ -68,6 +48,27 @@ add_library(langchain_cpp ${SOURCES} ${HEADERS})
 target_link_libraries(langchain_cpp Threads::Threads)
 target_include_directories(langchain_cpp PUBLIC include)
 
+# Compiler-specific options
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_compile_options(langchain_cpp PRIVATE
+        -O3
+        -march=native
+        -Wall
+        -Wextra
+        -Wpedantic
+        -Wno-unused-parameter
+        -flto
+    )
+    set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
+elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    target_compile_options(langchain_cpp PRIVATE
+        /O2
+        /permissive-
+        /W4
+        /WX
+    )
+endif()
+
 # Enable testing
 option(ENABLE_TESTING "Enable tests" ON)
 if(ENABLE_TESTING)
@@ -87,8 +88,8 @@ install(DIRECTORY include/langchain
 )
 
 # Examples
-option(BUILD_EXAMPLES "Build examples" ON)
-if(BUILD_EXAMPLES)
+option(BUILD_EXAMPLES "Build examples" OFF)
+if(BUILD_EXAMPLES AND EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/examples/CMakeLists.txt)
     add_subdirectory(examples)
 endif()
 

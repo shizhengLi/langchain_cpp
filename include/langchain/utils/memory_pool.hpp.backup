@@ -1,0 +1,549 @@
+#pragma once
+
+#include <memory>
+#include <vector>
+#include <mutex>
+#include <atomic>
+#include <cstddef>
+#include <new>
+#include <type_traits>
+#include <unordered_map>
+
+namespace langchain::utils {
+
+/**
+ * @brief High-performance memory pool for frequent allocations
+ *
+ * This memory pool provides fast allocation and deallocation for objects
+ * of the same size, reducing the overhead of repeated malloc/free calls.
+ */
+template<size_t BlockSize = 4096>
+class MemoryPool {
+private:
+    struct Block {
+        alignas(std::max(alignof(std::max_align_t), size_t(16))) std::byte data[BlockSize];
+        Block* next;
+    };
+
+    std::vector<std::unique_ptr<Block>> blocks_;
+    Block* free_list_ = nullptr;
+    mutable std::mutex mutex_;
+    std::atomic<size_t> allocated_blocks_{0};
+    std::atomic<size_t> free_blocks_{0};
+
+public:
+    /**
+     * @brief Constructor
+     * @param initial_blocks Number of blocks to pre-allocate
+     */
+    explicit MemoryPool(size_t initial_blocks = 0) {
+        for (size_t i = 0; i < initial_blocks; ++i) {
+            allocate_new_block();
+        }
+    }
+
+    /**
+     * @brief Destructor - cleans up all allocated blocks
+     */
+    ~MemoryPool() {
+        std::lock_guard<std::mutex> lock(mutex_);
+        blocks_.clear();
+    }
+
+    /**
+     * @brief Allocate a block of memory
+     * @param size Size of allocation (must be <= BlockSize)
+     * @return Pointer to allocated memory
+     */
+    void* allocate(size_t size) {
+        if (size > BlockSize) {
+            throw std::bad_alloc();
+        }
+
+        std::lock_guard<std::mutex> lock(mutex_);
+
+        if (!free_list_) {
+            allocate_new_block();
+        }
+
+        Block* block = free_list_;
+        free_list_ = free_list_->next;
+        free_blocks_--;
+
+        return static_cast<void*>(block);
+    }
+
+    /**
+     * @brief Deallocate a block of memory
+     * @param ptr Pointer to deallocate
+     */
+    void deallocate(void* ptr) {
+        if (!ptr) return;
+
+        std::lock_guard<std::mutex> lock(mutex_);
+
+        Block* block = static_cast<Block*>(ptr);
+        block->next = free_list_;
+        free_list_ = block;
+        free_blocks_++;
+    }
+
+    /**
+     * @brief Get pool statistics
+     * @return Pair of (allocated_blocks, free_blocks)
+     */
+    std::pair<size_t, size_t> get_stats() const {
+        return {allocated_blocks_.load(), free_blocks_.load()};
+    }
+
+    /**
+     * @brief Get total memory usage
+     * @return Total memory usage in bytes
+     */
+    size_t get_memory_usage() const {
+        return allocated_blocks_.load() * BlockSize;
+    }
+
+    /**
+     * @brief Clear all free blocks (keeps allocated blocks)
+     */
+    void clear_free_blocks() {
+        std::lock_guard<std::mutex> lock(mutex_);
+        free_list_ = nullptr;
+        free_blocks_ = 0;
+    }
+
+private:
+    void allocate_new_block() {
+        auto block = std::make_unique<Block>();
+        Block* raw_ptr = block.get();
+        raw_ptr->next = free_list_;
+        free_list_ = raw_ptr;
+        blocks_.push_back(std::move(block));
+        allocated_blocks_++;
+        free_blocks_++;
+    }
+};
+
+/**
+ * @brief Thread-local memory pool for lock-free allocations
+ */
+template<size_t BlockSize = 4096>
+class ThreadLocalPool {
+private:
+    thread_local static std::unique_ptr<MemoryPool<BlockSize>> pool_;
+    thread_local static bool initialized_;
+
+public:
+    /**
+     * @brief Get or create thread-local pool
+     * @return Reference to thread-local pool
+     */
+    static MemoryPool<BlockSize>& get_pool() {
+        if (!initialized_) {
+            pool_ = std::make_unique<MemoryPool<BlockSize>>(16);
+            initialized_ = true;
+        }
+        return *pool_;
+    }
+
+    /**
+     * @brief Allocate from thread-local pool
+     * @param size Size to allocate
+     * @return Pointer to allocated memory
+     */
+    static void* allocate(size_t size) {
+        return get_pool().allocate(size);
+    }
+
+    /**
+     * @brief Deallocate to thread-local pool
+     * @param ptr Pointer to deallocate
+     */
+    static void deallocate(void* ptr) {
+        get_pool().deallocate(ptr);
+    }
+};
+
+template<size_t BlockSize>
+thread_local std::unique_ptr<MemoryPool<BlockSize>> ThreadLocalPool<BlockSize>::pool_;
+
+template<size_t BlockSize>
+thread_local bool ThreadLocalPool<BlockSize>::initialized_ = false;
+
+/**
+ * @brief RAII wrapper for memory pool allocations
+ */
+template<typename T>
+class PoolAllocator {
+public:
+    using value_type = T;
+    using pointer = T*;
+    using const_pointer = const T*;
+    using reference = T&;
+    using const_reference = const T&;
+    using size_type = size_t;
+    using difference_type = ptrdiff_t;
+
+    template<typename U>
+    struct rebind {
+        using other = PoolAllocator<U>;
+    };
+
+private:
+    MemoryPool<sizeof(T)>* pool_;
+
+public:
+    /**
+     * @brief Constructor
+     * @param pool Memory pool to use (nullptr for default pool)
+     */
+    explicit PoolAllocator(MemoryPool<sizeof(T)>* pool = nullptr)
+        : pool_(pool ? pool : &ThreadLocalPool<sizeof(T)>::get_pool()) {}
+
+    template<typename U>
+    PoolAllocator(const PoolAllocator<U>& other) : pool_(other.pool_) {}
+
+    /**
+     * @brief Allocate memory for n objects
+     * @param n Number of objects
+     * @return Pointer to allocated memory
+     */
+    pointer allocate(size_type n) {
+        if (n == 0) return nullptr;
+        if (n > 1) {
+            // For multiple allocations, fall back to standard allocator
+            return static_cast<pointer>(::operator new(n * sizeof(T)));
+        }
+        return static_cast<pointer>(pool_->allocate(sizeof(T)));
+    }
+
+    /**
+     * @brief Deallocate memory
+     * @param p Pointer to deallocate
+     * @param n Number of objects (unused for single allocations)
+     */
+    void deallocate(pointer p, size_type n) {
+        if (!p) return;
+        if (n > 1) {
+            ::operator delete(p);
+        } else {
+            pool_->deallocate(p);
+        }
+    }
+
+    template<typename U, typename... Args>
+    void construct(U* p, Args&&... args) {
+        ::new (static_cast<void*>(p)) U(std::forward<Args>(args)...);
+    }
+
+    template<typename U>
+    void destroy(U* p) {
+        p->~U();
+    }
+
+    template<typename U>
+    bool operator==(const PoolAllocator<U>& other) const {
+        return pool_ == other.pool_;
+    }
+
+    template<typename U>
+    bool operator!=(const PoolAllocator<U>& other) const {
+        return !(*this == other);
+    }
+
+    MemoryPool<sizeof(T)>* get_pool() const { return pool_; }
+};
+
+/**
+ * @brief Smart pointer that uses memory pool allocation
+ */
+template<typename T>
+class PoolPtr {
+private:
+    T* ptr_;
+    MemoryPool<sizeof(T)>* pool_;
+
+public:
+    /**
+     * @brief Constructor
+     * @param ptr Raw pointer
+     * @param pool Memory pool
+     */
+    explicit PoolPtr(T* ptr = nullptr, MemoryPool<sizeof(T)>* pool = nullptr)
+        : ptr_(ptr), pool_(pool ? pool : &ThreadLocalPool<sizeof(T)>::get_pool()) {}
+
+    /**
+     * @brief Destructor
+     */
+    ~PoolPtr() {
+        if (ptr_) {
+            ptr_->~T();
+            pool_->deallocate(ptr_);
+        }
+    }
+
+    /**
+     * @brief Copy constructor (deleted - unique ownership)
+     */
+    PoolPtr(const PoolPtr&) = delete;
+
+    /**
+     * @brief Move constructor
+     */
+    PoolPtr(PoolPtr&& other) noexcept
+        : ptr_(other.ptr_), pool_(other.pool_) {
+        other.ptr_ = nullptr;
+        other.pool_ = nullptr;
+    }
+
+    /**
+     * @brief Copy assignment (deleted)
+     */
+    PoolPtr& operator=(const PoolPtr&) = delete;
+
+    /**
+     * @brief Move assignment
+     */
+    PoolPtr& operator=(PoolPtr&& other) noexcept {
+        if (this != &other) {
+            reset();
+            ptr_ = other.ptr_;
+            pool_ = other.pool_;
+            other.ptr_ = nullptr;
+            other.pool_ = nullptr;
+        }
+        return *this;
+    }
+
+    /**
+     * @brief Dereference operator
+     */
+    T& operator*() const { return *ptr_; }
+
+    /**
+     * @brief Arrow operator
+     */
+    T* operator->() const { return ptr_; }
+
+    /**
+     * @brief Get raw pointer
+     */
+    T* get() const { return ptr_; }
+
+    /**
+     * @brief Check if pointer is valid
+     */
+    explicit operator bool() const { return ptr_ != nullptr; }
+
+    /**
+     * @brief Reset pointer
+     */
+    void reset() {
+        if (ptr_) {
+            ptr_->~T();
+            pool_->deallocate(ptr_);
+            ptr_ = nullptr;
+        }
+    }
+
+    /**
+     * @brief Release ownership
+     */
+    T* release() {
+        T* temp = ptr_;
+        ptr_ = nullptr;
+        return temp;
+    }
+
+    /**
+     * @brief Equality comparison with nullptr
+     */
+    bool operator==(std::nullptr_t) const { return ptr_ == nullptr; }
+
+    /**
+     * @brief Inequality comparison with nullptr
+     */
+    bool operator!=(std::nullptr_t) const { return ptr_ != nullptr; }
+
+    /**
+     * @brief Equality comparison with another PoolPtr
+     */
+    bool operator==(const PoolPtr& other) const { return ptr_ == other.ptr_; }
+
+    /**
+     * @brief Inequality comparison with another PoolPtr
+     */
+    bool operator!=(const PoolPtr& other) const { return ptr_ != other.ptr_; }
+};
+
+/**
+ * @brief Factory function to create pool-allocated objects
+ */
+template<typename T, typename... Args>
+PoolPtr<T> make_pool_unique(Args&&... args) {
+    auto& pool = ThreadLocalPool<sizeof(T)>::get_pool();
+    void* memory = pool.allocate(sizeof(T));
+    T* ptr = new (memory) T(std::forward<Args>(args)...);
+    return PoolPtr<T>(ptr, &pool);
+}
+
+/**
+ * @brief Factory function with custom pool
+ */
+template<typename T, typename... Args>
+PoolPtr<T> make_pool_unique(MemoryPool<sizeof(T)>& pool, Args&&... args) {
+    void* memory = pool.allocate(sizeof(T));
+    T* ptr = new (memory) T(std::forward<Args>(args)...);
+    return PoolPtr<T>(ptr, &pool);
+}
+
+/*
+ * @brief LRU Cache implementation with memory pooling
+ * (Temporarily disabled due to complexity - will re-implement later)
+template<typename Key, typename Value>
+class LRUCache {
+private:
+    struct Node {
+        Key key;
+        Value value;
+        std::unique_ptr<Node> prev;
+        std::unique_ptr<Node> next;
+
+        template<typename K, typename V>
+        Node(K&& k, V&& v) : key(std::forward<K>(k)), value(std::forward<V>(v)) {}
+    };
+
+    size_t capacity_;
+    std::unordered_map<Key, Node*> cache_;
+    std::unique_ptr<Node> head_;
+    std::unique_ptr<Node> tail_;
+    MemoryPool<sizeof(Node)> node_pool_;
+
+public:
+    /**
+     * @brief Constructor
+     * @param capacity Maximum cache capacity
+     */
+    explicit LRUCache(size_t capacity) : capacity_(capacity) {
+        head_ = std::make_unique<Node>(Key{}, Value{});
+        tail_ = std::make_unique<Node>(Key{}, Value{});
+        head_->next = std::move(tail_);
+        tail_->prev = std::move(head_);
+    }
+
+    /**
+     * @brief Get value from cache
+     * @param key Cache key
+     * @return Optional value
+     */
+    std::optional<Value> get(const Key& key) {
+        auto it = cache_.find(key);
+        if (it == cache_.end()) {
+            return std::nullopt;
+        }
+
+        // Move to front
+        Node* node = it->second;
+        move_to_front(node);
+
+        return node->value;
+    }
+
+    /**
+     * @brief Put value into cache
+     * @param key Cache key
+     * @param value Cache value
+     */
+    void put(const Key& key, const Value& value) {
+        auto it = cache_.find(key);
+        if (it != cache_.end()) {
+            // Update existing
+            it->second->value = value;
+            move_to_front(it->second);
+            return;
+        }
+
+        // Add new node
+        auto* node = static_cast<Node*>(node_pool_.allocate(sizeof(Node)));
+        new (node) Node(key, value);
+
+        cache_[key] = node;
+        add_to_front(node);
+
+        if (cache_.size() > capacity_) {
+            evict_lru();
+        }
+    }
+
+    /**
+     * @brief Check if key exists in cache
+     * @param key Cache key
+     * @return True if exists
+     */
+    bool contains(const Key& key) const {
+        return cache_.find(key) != cache_.end();
+    }
+
+    /**
+     * @brief Get cache size
+     * @return Current size
+     */
+    size_t size() const {
+        return cache_.size();
+    }
+
+    /**
+     * @brief Clear cache
+     */
+    void clear() {
+        cache_.clear();
+
+        // Reset linked list
+        head_->next = std::move(tail_);
+        tail_->prev = std::move(head_);
+
+        node_pool_.clear_free_blocks();
+    }
+
+private:
+    void move_to_front(Node* node) {
+        remove_node(node);
+        add_to_front(node);
+    }
+
+    void add_to_front(Node* node) {
+        node->prev = head_.get();
+        node->next = std::move(head_->next);
+        head_->next->prev = node;
+        head_->next = std::unique_ptr<Node>(node);
+    }
+
+    void remove_node(Node* node) {
+        if (node->prev) {
+            node->prev->next = std::move(node->next);
+        }
+        if (node->next) {
+            node->next->prev = node->prev;
+        }
+    }
+
+    void evict_lru() {
+        if (tail_->prev && tail_->prev != head_.get()) {
+            Node* lru = tail_->prev;
+            cache_.erase(lru->key);
+
+            // Remove from list
+            if (lru->prev) {
+                lru->prev->next = std::move(lru->next);
+            }
+
+            // Return to pool
+            lru->~Node();
+            node_pool_.deallocate(lru);
+        }
+    }
+};
+ */
+
+} // namespace langchain::utils

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblangchain_cpp.a CMakeFiles/langchain_cpp.dir/src/core/types.cpp.o CMakeFiles/langchain_cpp.dir/src/core/config.cpp.o CMakeFiles/langchain_cpp.dir/src/utils/memory_pool.cpp.o CMakeFiles/langchain_cpp.dir/src/utils/thread_pool.cpp.o CMakeFiles/langchain_cpp.dir/src/utils/logging.cpp.o CMakeFiles/langchain_cpp.dir/src/utils/simd_ops.cpp.o
+/usr/bin/ranlib liblangchain_cpp.a
