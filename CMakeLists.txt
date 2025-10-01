@@ -17,6 +17,7 @@ include_directories(include)
 
 # Find required packages
 find_package(Threads REQUIRED)
+find_package(CURL REQUIRED)
 
 # Third-party libraries (header-only)
 add_subdirectory(third_party)
@@ -32,6 +33,12 @@ set(SOURCES
     src/text/text_processor.cpp
     src/retrievers/inverted_index_retriever.cpp
     src/retrievers/bm25_retriever.cpp
+    src/vectorstores/simple_vector_store.cpp
+  src/retrievers/hybrid_retriever.cpp
+  src/llm/base_llm.cpp
+  src/llm/openai_llm.cpp
+  src/chains/llm_chain.cpp
+  src/chains/sequential_chain.cpp
 )
 
 # Header files
@@ -48,11 +55,18 @@ set(HEADERS
     include/langchain/retrievers/inverted_index_retriever.hpp
     include/langchain/retrievers/bm25_retriever.hpp
     include/langchain/text/text_processor.hpp
+    include/langchain/vectorstores/simple_vector_store.hpp
+  include/langchain/retrievers/hybrid_retriever.hpp
+  include/langchain/llm/base_llm.hpp
+  include/langchain/llm/openai_llm.hpp
+  include/langchain/chains/base_chain.hpp
+  include/langchain/chains/llm_chain.hpp
+  include/langchain/chains/sequential_chain.hpp
 )
 
 # Create main library
 add_library(langchain_cpp ${SOURCES} ${HEADERS})
-target_link_libraries(langchain_cpp Threads::Threads)
+target_link_libraries(langchain_cpp Threads::Threads CURL::libcurl)
 target_include_directories(langchain_cpp PUBLIC include)
 
 # Compiler-specific options

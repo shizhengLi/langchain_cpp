@@ -14,6 +14,11 @@ target_sources(unit_tests PRIVATE
     unit_tests/test_inverted_index_retriever.cpp
     unit_tests/test_bm25_retriever.cpp
     unit_tests/test_bm25_simd_tfidf.cpp
+    unit_tests/test_simple_vector_store.cpp
+  unit_tests/test_hybrid_retriever.cpp
+  unit_tests/test_base_llm.cpp
+  unit_tests/test_openai_llm.cpp
+  unit_tests/test_chains.cpp
     unit_tests/main.cpp
 )
 

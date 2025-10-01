@@ -198,6 +198,90 @@ CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/bm25_retriever.cpp -o CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.s
 
+CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/vectorstores/simple_vector_store.cpp
+CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/vectorstores/simple_vector_store.cpp
+
+CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/vectorstores/simple_vector_store.cpp > CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/vectorstores/simple_vector_store.cpp -o CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.s
+
+CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/hybrid_retriever.cpp
+CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/hybrid_retriever.cpp
+
+CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/hybrid_retriever.cpp > CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/hybrid_retriever.cpp -o CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.s
+
+CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/llm/base_llm.cpp
+CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/llm/base_llm.cpp
+
+CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/llm/base_llm.cpp > CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/llm/base_llm.cpp -o CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.s
+
+CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/llm/openai_llm.cpp
+CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/llm/openai_llm.cpp
+
+CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/llm/openai_llm.cpp > CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/llm/openai_llm.cpp -o CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.s
+
+CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/llm_chain.cpp
+CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/llm_chain.cpp
+
+CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/llm_chain.cpp > CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/llm_chain.cpp -o CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.s
+
+CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/sequential_chain.cpp
+CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/sequential_chain.cpp
+
+CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/sequential_chain.cpp > CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/chains/sequential_chain.cpp -o CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.s
+
 # Object files for target langchain_cpp
 langchain_cpp_OBJECTS = \
 "CMakeFiles/langchain_cpp.dir/src/core/types.cpp.o" \
@@ -208,7 +292,13 @@ langchain_cpp_OBJECTS = \
 "CMakeFiles/langchain_cpp.dir/src/utils/simd_ops.cpp.o" \
 "CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o" \
 "CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o" \
-"CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.o"
+"CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o"
 
 # External object files for target langchain_cpp
 langchain_cpp_EXTERNAL_OBJECTS =
@@ -222,9 +312,15 @@ liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/utils/simd_ops.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/build.make
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library liblangchain_cpp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library liblangchain_cpp.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/langchain_cpp.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/langchain_cpp.dir/link.txt --verbose=$(VERBOSE)
 

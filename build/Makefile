@@ -223,6 +223,54 @@ unit_tests/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
 .PHONY : unit_tests/fast
 
+src/chains/llm_chain.o: src/chains/llm_chain.cpp.o
+.PHONY : src/chains/llm_chain.o
+
+# target to build an object file
+src/chains/llm_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.o
+.PHONY : src/chains/llm_chain.cpp.o
+
+src/chains/llm_chain.i: src/chains/llm_chain.cpp.i
+.PHONY : src/chains/llm_chain.i
+
+# target to preprocess a source file
+src/chains/llm_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.i
+.PHONY : src/chains/llm_chain.cpp.i
+
+src/chains/llm_chain.s: src/chains/llm_chain.cpp.s
+.PHONY : src/chains/llm_chain.s
+
+# target to generate assembly for a file
+src/chains/llm_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/chains/llm_chain.cpp.s
+.PHONY : src/chains/llm_chain.cpp.s
+
+src/chains/sequential_chain.o: src/chains/sequential_chain.cpp.o
+.PHONY : src/chains/sequential_chain.o
+
+# target to build an object file
+src/chains/sequential_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.o
+.PHONY : src/chains/sequential_chain.cpp.o
+
+src/chains/sequential_chain.i: src/chains/sequential_chain.cpp.i
+.PHONY : src/chains/sequential_chain.i
+
+# target to preprocess a source file
+src/chains/sequential_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.i
+.PHONY : src/chains/sequential_chain.cpp.i
+
+src/chains/sequential_chain.s: src/chains/sequential_chain.cpp.s
+.PHONY : src/chains/sequential_chain.s
+
+# target to generate assembly for a file
+src/chains/sequential_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/chains/sequential_chain.cpp.s
+.PHONY : src/chains/sequential_chain.cpp.s
+
 src/core/config.o: src/core/config.cpp.o
 .PHONY : src/core/config.o
 
@@ -271,6 +319,54 @@ src/core/types.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/core/types.cpp.s
 .PHONY : src/core/types.cpp.s
 
+src/llm/base_llm.o: src/llm/base_llm.cpp.o
+.PHONY : src/llm/base_llm.o
+
+# target to build an object file
+src/llm/base_llm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.o
+.PHONY : src/llm/base_llm.cpp.o
+
+src/llm/base_llm.i: src/llm/base_llm.cpp.i
+.PHONY : src/llm/base_llm.i
+
+# target to preprocess a source file
+src/llm/base_llm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.i
+.PHONY : src/llm/base_llm.cpp.i
+
+src/llm/base_llm.s: src/llm/base_llm.cpp.s
+.PHONY : src/llm/base_llm.s
+
+# target to generate assembly for a file
+src/llm/base_llm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/llm/base_llm.cpp.s
+.PHONY : src/llm/base_llm.cpp.s
+
+src/llm/openai_llm.o: src/llm/openai_llm.cpp.o
+.PHONY : src/llm/openai_llm.o
+
+# target to build an object file
+src/llm/openai_llm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.o
+.PHONY : src/llm/openai_llm.cpp.o
+
+src/llm/openai_llm.i: src/llm/openai_llm.cpp.i
+.PHONY : src/llm/openai_llm.i
+
+# target to preprocess a source file
+src/llm/openai_llm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.i
+.PHONY : src/llm/openai_llm.cpp.i
+
+src/llm/openai_llm.s: src/llm/openai_llm.cpp.s
+.PHONY : src/llm/openai_llm.s
+
+# target to generate assembly for a file
+src/llm/openai_llm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/llm/openai_llm.cpp.s
+.PHONY : src/llm/openai_llm.cpp.s
+
 src/retrievers/bm25_retriever.o: src/retrievers/bm25_retriever.cpp.o
 .PHONY : src/retrievers/bm25_retriever.o
 
@@ -294,6 +390,30 @@ src/retrievers/bm25_retriever.s: src/retrievers/bm25_retriever.cpp.s
 src/retrievers/bm25_retriever.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.s
 .PHONY : src/retrievers/bm25_retriever.cpp.s
+
+src/retrievers/hybrid_retriever.o: src/retrievers/hybrid_retriever.cpp.o
+.PHONY : src/retrievers/hybrid_retriever.o
+
+# target to build an object file
+src/retrievers/hybrid_retriever.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.o
+.PHONY : src/retrievers/hybrid_retriever.cpp.o
+
+src/retrievers/hybrid_retriever.i: src/retrievers/hybrid_retriever.cpp.i
+.PHONY : src/retrievers/hybrid_retriever.i
+
+# target to preprocess a source file
+src/retrievers/hybrid_retriever.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.i
+.PHONY : src/retrievers/hybrid_retriever.cpp.i
+
+src/retrievers/hybrid_retriever.s: src/retrievers/hybrid_retriever.cpp.s
+.PHONY : src/retrievers/hybrid_retriever.s
+
+# target to generate assembly for a file
+src/retrievers/hybrid_retriever.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/hybrid_retriever.cpp.s
+.PHONY : src/retrievers/hybrid_retriever.cpp.s
 
 src/retrievers/inverted_index_retriever.o: src/retrievers/inverted_index_retriever.cpp.o
 .PHONY : src/retrievers/inverted_index_retriever.o
@@ -439,6 +559,30 @@ src/utils/thread_pool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/utils/thread_pool.cpp.s
 .PHONY : src/utils/thread_pool.cpp.s
 
+src/vectorstores/simple_vector_store.o: src/vectorstores/simple_vector_store.cpp.o
+.PHONY : src/vectorstores/simple_vector_store.o
+
+# target to build an object file
+src/vectorstores/simple_vector_store.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.o
+.PHONY : src/vectorstores/simple_vector_store.cpp.o
+
+src/vectorstores/simple_vector_store.i: src/vectorstores/simple_vector_store.cpp.i
+.PHONY : src/vectorstores/simple_vector_store.i
+
+# target to preprocess a source file
+src/vectorstores/simple_vector_store.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.i
+.PHONY : src/vectorstores/simple_vector_store.cpp.i
+
+src/vectorstores/simple_vector_store.s: src/vectorstores/simple_vector_store.cpp.s
+.PHONY : src/vectorstores/simple_vector_store.s
+
+# target to generate assembly for a file
+src/vectorstores/simple_vector_store.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/vectorstores/simple_vector_store.cpp.s
+.PHONY : src/vectorstores/simple_vector_store.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -456,15 +600,30 @@ help:
 	@echo "... Catch2WithMain"
 	@echo "... langchain_cpp"
 	@echo "... unit_tests"
+	@echo "... src/chains/llm_chain.o"
+	@echo "... src/chains/llm_chain.i"
+	@echo "... src/chains/llm_chain.s"
+	@echo "... src/chains/sequential_chain.o"
+	@echo "... src/chains/sequential_chain.i"
+	@echo "... src/chains/sequential_chain.s"
 	@echo "... src/core/config.o"
 	@echo "... src/core/config.i"
 	@echo "... src/core/config.s"
 	@echo "... src/core/types.o"
 	@echo "... src/core/types.i"
 	@echo "... src/core/types.s"
+	@echo "... src/llm/base_llm.o"
+	@echo "... src/llm/base_llm.i"
+	@echo "... src/llm/base_llm.s"
+	@echo "... src/llm/openai_llm.o"
+	@echo "... src/llm/openai_llm.i"
+	@echo "... src/llm/openai_llm.s"
 	@echo "... src/retrievers/bm25_retriever.o"
 	@echo "... src/retrievers/bm25_retriever.i"
 	@echo "... src/retrievers/bm25_retriever.s"
+	@echo "... src/retrievers/hybrid_retriever.o"
+	@echo "... src/retrievers/hybrid_retriever.i"
+	@echo "... src/retrievers/hybrid_retriever.s"
 	@echo "... src/retrievers/inverted_index_retriever.o"
 	@echo "... src/retrievers/inverted_index_retriever.i"
 	@echo "... src/retrievers/inverted_index_retriever.s"
@@ -483,6 +642,9 @@ help:
 	@echo "... src/utils/thread_pool.o"
 	@echo "... src/utils/thread_pool.i"
 	@echo "... src/utils/thread_pool.s"
+	@echo "... src/vectorstores/simple_vector_store.o"
+	@echo "... src/vectorstores/simple_vector_store.i"
+	@echo "... src/vectorstores/simple_vector_store.s"
 .PHONY : help
 
 

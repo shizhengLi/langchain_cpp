@@ -146,8 +146,8 @@ private:
 };
 
 // Static member definitions
-std::unique_ptr<Logger> Logger::instance_;
-std::mutex Logger::instance_mutex_;
+inline std::unique_ptr<Logger> Logger::instance_;
+inline std::mutex Logger::instance_mutex_;
 
 /**
  * @brief Convenience macros for logging

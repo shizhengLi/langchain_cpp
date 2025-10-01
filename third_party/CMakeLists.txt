@@ -8,3 +8,6 @@ FetchContent_Declare(
 )
 
 FetchContent_MakeAvailable(Catch2)
+
+# Note: nlohmann/json removed due to CMake version compatibility issues
+# Will implement simple JSON parsing for OpenAI API responses

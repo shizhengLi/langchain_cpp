@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/lishizheng/Desktop/Code/langchain-impl-cpp/_deps/catch2-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

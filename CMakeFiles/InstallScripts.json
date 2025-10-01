@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/lishizheng/Desktop/Code/langchain-impl-cpp/cmake_install.cmake",
+		"/Users/lishizheng/Desktop/Code/langchain-impl-cpp/third_party/cmake_install.cmake",
+		"/Users/lishizheng/Desktop/Code/langchain-impl-cpp/_deps/catch2-build/cmake_install.cmake",
+		"/Users/lishizheng/Desktop/Code/langchain-impl-cpp/_deps/catch2-build/src/cmake_install.cmake",
+		"/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

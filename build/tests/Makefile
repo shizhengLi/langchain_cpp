@@ -209,6 +209,30 @@ unit_tests/main.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.s
 .PHONY : unit_tests/main.cpp.s
 
+unit_tests/test_base_llm.o: unit_tests/test_base_llm.cpp.o
+.PHONY : unit_tests/test_base_llm.o
+
+# target to build an object file
+unit_tests/test_base_llm.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_llm.cpp.o
+.PHONY : unit_tests/test_base_llm.cpp.o
+
+unit_tests/test_base_llm.i: unit_tests/test_base_llm.cpp.i
+.PHONY : unit_tests/test_base_llm.i
+
+# target to preprocess a source file
+unit_tests/test_base_llm.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_llm.cpp.i
+.PHONY : unit_tests/test_base_llm.cpp.i
+
+unit_tests/test_base_llm.s: unit_tests/test_base_llm.cpp.s
+.PHONY : unit_tests/test_base_llm.s
+
+# target to generate assembly for a file
+unit_tests/test_base_llm.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_llm.cpp.s
+.PHONY : unit_tests/test_base_llm.cpp.s
+
 unit_tests/test_base_retriever.o: unit_tests/test_base_retriever.cpp.o
 .PHONY : unit_tests/test_base_retriever.o
 
@@ -281,6 +305,30 @@ unit_tests/test_bm25_simd_tfidf.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_simd_tfidf.cpp.s
 .PHONY : unit_tests/test_bm25_simd_tfidf.cpp.s
 
+unit_tests/test_chains.o: unit_tests/test_chains.cpp.o
+.PHONY : unit_tests/test_chains.o
+
+# target to build an object file
+unit_tests/test_chains.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_chains.cpp.o
+.PHONY : unit_tests/test_chains.cpp.o
+
+unit_tests/test_chains.i: unit_tests/test_chains.cpp.i
+.PHONY : unit_tests/test_chains.i
+
+# target to preprocess a source file
+unit_tests/test_chains.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_chains.cpp.i
+.PHONY : unit_tests/test_chains.cpp.i
+
+unit_tests/test_chains.s: unit_tests/test_chains.cpp.s
+.PHONY : unit_tests/test_chains.s
+
+# target to generate assembly for a file
+unit_tests/test_chains.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_chains.cpp.s
+.PHONY : unit_tests/test_chains.cpp.s
+
 unit_tests/test_core_config.o: unit_tests/test_core_config.cpp.o
 .PHONY : unit_tests/test_core_config.o
 
@@ -328,6 +376,30 @@ unit_tests/test_core_types.s: unit_tests/test_core_types.cpp.s
 unit_tests/test_core_types.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_core_types.cpp.s
 .PHONY : unit_tests/test_core_types.cpp.s
+
+unit_tests/test_hybrid_retriever.o: unit_tests/test_hybrid_retriever.cpp.o
+.PHONY : unit_tests/test_hybrid_retriever.o
+
+# target to build an object file
+unit_tests/test_hybrid_retriever.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_hybrid_retriever.cpp.o
+.PHONY : unit_tests/test_hybrid_retriever.cpp.o
+
+unit_tests/test_hybrid_retriever.i: unit_tests/test_hybrid_retriever.cpp.i
+.PHONY : unit_tests/test_hybrid_retriever.i
+
+# target to preprocess a source file
+unit_tests/test_hybrid_retriever.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_hybrid_retriever.cpp.i
+.PHONY : unit_tests/test_hybrid_retriever.cpp.i
+
+unit_tests/test_hybrid_retriever.s: unit_tests/test_hybrid_retriever.cpp.s
+.PHONY : unit_tests/test_hybrid_retriever.s
+
+# target to generate assembly for a file
+unit_tests/test_hybrid_retriever.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_hybrid_retriever.cpp.s
+.PHONY : unit_tests/test_hybrid_retriever.cpp.s
 
 unit_tests/test_inverted_index_retriever.o: unit_tests/test_inverted_index_retriever.cpp.o
 .PHONY : unit_tests/test_inverted_index_retriever.o
@@ -401,6 +473,30 @@ unit_tests/test_memory_pool.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory_pool.cpp.s
 .PHONY : unit_tests/test_memory_pool.cpp.s
 
+unit_tests/test_openai_llm.o: unit_tests/test_openai_llm.cpp.o
+.PHONY : unit_tests/test_openai_llm.o
+
+# target to build an object file
+unit_tests/test_openai_llm.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_openai_llm.cpp.o
+.PHONY : unit_tests/test_openai_llm.cpp.o
+
+unit_tests/test_openai_llm.i: unit_tests/test_openai_llm.cpp.i
+.PHONY : unit_tests/test_openai_llm.i
+
+# target to preprocess a source file
+unit_tests/test_openai_llm.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_openai_llm.cpp.i
+.PHONY : unit_tests/test_openai_llm.cpp.i
+
+unit_tests/test_openai_llm.s: unit_tests/test_openai_llm.cpp.s
+.PHONY : unit_tests/test_openai_llm.s
+
+# target to generate assembly for a file
+unit_tests/test_openai_llm.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_openai_llm.cpp.s
+.PHONY : unit_tests/test_openai_llm.cpp.s
+
 unit_tests/test_simd_ops.o: unit_tests/test_simd_ops.cpp.o
 .PHONY : unit_tests/test_simd_ops.o
 
@@ -424,6 +520,30 @@ unit_tests/test_simd_ops.s: unit_tests/test_simd_ops.cpp.s
 unit_tests/test_simd_ops.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_simd_ops.cpp.s
 .PHONY : unit_tests/test_simd_ops.cpp.s
+
+unit_tests/test_simple_vector_store.o: unit_tests/test_simple_vector_store.cpp.o
+.PHONY : unit_tests/test_simple_vector_store.o
+
+# target to build an object file
+unit_tests/test_simple_vector_store.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_simple_vector_store.cpp.o
+.PHONY : unit_tests/test_simple_vector_store.cpp.o
+
+unit_tests/test_simple_vector_store.i: unit_tests/test_simple_vector_store.cpp.i
+.PHONY : unit_tests/test_simple_vector_store.i
+
+# target to preprocess a source file
+unit_tests/test_simple_vector_store.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_simple_vector_store.cpp.i
+.PHONY : unit_tests/test_simple_vector_store.cpp.i
+
+unit_tests/test_simple_vector_store.s: unit_tests/test_simple_vector_store.cpp.s
+.PHONY : unit_tests/test_simple_vector_store.s
+
+# target to generate assembly for a file
+unit_tests/test_simple_vector_store.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_simple_vector_store.cpp.s
+.PHONY : unit_tests/test_simple_vector_store.cpp.s
 
 unit_tests/test_text_processor.o: unit_tests/test_text_processor.cpp.o
 .PHONY : unit_tests/test_text_processor.o
@@ -490,6 +610,9 @@ help:
 	@echo "... unit_tests/main.o"
 	@echo "... unit_tests/main.i"
 	@echo "... unit_tests/main.s"
+	@echo "... unit_tests/test_base_llm.o"
+	@echo "... unit_tests/test_base_llm.i"
+	@echo "... unit_tests/test_base_llm.s"
 	@echo "... unit_tests/test_base_retriever.o"
 	@echo "... unit_tests/test_base_retriever.i"
 	@echo "... unit_tests/test_base_retriever.s"
@@ -499,12 +622,18 @@ help:
 	@echo "... unit_tests/test_bm25_simd_tfidf.o"
 	@echo "... unit_tests/test_bm25_simd_tfidf.i"
 	@echo "... unit_tests/test_bm25_simd_tfidf.s"
+	@echo "... unit_tests/test_chains.o"
+	@echo "... unit_tests/test_chains.i"
+	@echo "... unit_tests/test_chains.s"
 	@echo "... unit_tests/test_core_config.o"
 	@echo "... unit_tests/test_core_config.i"
 	@echo "... unit_tests/test_core_config.s"
 	@echo "... unit_tests/test_core_types.o"
 	@echo "... unit_tests/test_core_types.i"
 	@echo "... unit_tests/test_core_types.s"
+	@echo "... unit_tests/test_hybrid_retriever.o"
+	@echo "... unit_tests/test_hybrid_retriever.i"
+	@echo "... unit_tests/test_hybrid_retriever.s"
 	@echo "... unit_tests/test_inverted_index_retriever.o"
 	@echo "... unit_tests/test_inverted_index_retriever.i"
 	@echo "... unit_tests/test_inverted_index_retriever.s"
@@ -514,9 +643,15 @@ help:
 	@echo "... unit_tests/test_memory_pool.o"
 	@echo "... unit_tests/test_memory_pool.i"
 	@echo "... unit_tests/test_memory_pool.s"
+	@echo "... unit_tests/test_openai_llm.o"
+	@echo "... unit_tests/test_openai_llm.i"
+	@echo "... unit_tests/test_openai_llm.s"
 	@echo "... unit_tests/test_simd_ops.o"
 	@echo "... unit_tests/test_simd_ops.i"
 	@echo "... unit_tests/test_simd_ops.s"
+	@echo "... unit_tests/test_simple_vector_store.o"
+	@echo "... unit_tests/test_simple_vector_store.i"
+	@echo "... unit_tests/test_simple_vector_store.s"
 	@echo "... unit_tests/test_text_processor.o"
 	@echo "... unit_tests/test_text_processor.i"
 	@echo "... unit_tests/test_text_processor.s"
