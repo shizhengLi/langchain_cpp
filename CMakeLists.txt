@@ -31,6 +31,7 @@ set(SOURCES
     src/utils/simd_ops.cpp
     src/text/text_processor.cpp
     src/retrievers/inverted_index_retriever.cpp
+    src/retrievers/bm25_retriever.cpp
 )
 
 # Header files
@@ -45,6 +46,7 @@ set(HEADERS
     include/langchain/utils/simd_ops.hpp
     include/langchain/retrievers/base_retriever.hpp
     include/langchain/retrievers/inverted_index_retriever.hpp
+    include/langchain/retrievers/bm25_retriever.hpp
     include/langchain/text/text_processor.hpp
 )
 

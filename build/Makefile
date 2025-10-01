@@ -271,6 +271,30 @@ src/core/types.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/core/types.cpp.s
 .PHONY : src/core/types.cpp.s
 
+src/retrievers/bm25_retriever.o: src/retrievers/bm25_retriever.cpp.o
+.PHONY : src/retrievers/bm25_retriever.o
+
+# target to build an object file
+src/retrievers/bm25_retriever.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.o
+.PHONY : src/retrievers/bm25_retriever.cpp.o
+
+src/retrievers/bm25_retriever.i: src/retrievers/bm25_retriever.cpp.i
+.PHONY : src/retrievers/bm25_retriever.i
+
+# target to preprocess a source file
+src/retrievers/bm25_retriever.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.i
+.PHONY : src/retrievers/bm25_retriever.cpp.i
+
+src/retrievers/bm25_retriever.s: src/retrievers/bm25_retriever.cpp.s
+.PHONY : src/retrievers/bm25_retriever.s
+
+# target to generate assembly for a file
+src/retrievers/bm25_retriever.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.s
+.PHONY : src/retrievers/bm25_retriever.cpp.s
+
 src/retrievers/inverted_index_retriever.o: src/retrievers/inverted_index_retriever.cpp.o
 .PHONY : src/retrievers/inverted_index_retriever.o
 
@@ -438,6 +462,9 @@ help:
 	@echo "... src/core/types.o"
 	@echo "... src/core/types.i"
 	@echo "... src/core/types.s"
+	@echo "... src/retrievers/bm25_retriever.o"
+	@echo "... src/retrievers/bm25_retriever.i"
+	@echo "... src/retrievers/bm25_retriever.s"
 	@echo "... src/retrievers/inverted_index_retriever.o"
 	@echo "... src/retrievers/inverted_index_retriever.i"
 	@echo "... src/retrievers/inverted_index_retriever.s"

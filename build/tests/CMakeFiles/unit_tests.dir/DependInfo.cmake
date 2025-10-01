@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/main.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/main.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_base_retriever.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_retriever.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_retriever.cpp.o.d"
+  "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_bm25_retriever.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_retriever.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_retriever.cpp.o.d"
+  "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_bm25_simd_tfidf.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_simd_tfidf.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_simd_tfidf.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_core_config.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_core_config.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_core_config.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_core_types.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_core_types.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_core_types.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_inverted_index_retriever.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.o.d"

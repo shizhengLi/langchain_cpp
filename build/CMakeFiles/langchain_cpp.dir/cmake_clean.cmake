@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/langchain_cpp.dir/src/core/config.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/core/types.cpp.o"
   "CMakeFiles/langchain_cpp.dir/src/core/types.cpp.o.d"
+  "CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.o"
+  "CMakeFiles/langchain_cpp.dir/src/retrievers/bm25_retriever.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o"
   "CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o"

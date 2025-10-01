@@ -233,6 +233,54 @@ unit_tests/test_base_retriever.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_base_retriever.cpp.s
 .PHONY : unit_tests/test_base_retriever.cpp.s
 
+unit_tests/test_bm25_retriever.o: unit_tests/test_bm25_retriever.cpp.o
+.PHONY : unit_tests/test_bm25_retriever.o
+
+# target to build an object file
+unit_tests/test_bm25_retriever.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_retriever.cpp.o
+.PHONY : unit_tests/test_bm25_retriever.cpp.o
+
+unit_tests/test_bm25_retriever.i: unit_tests/test_bm25_retriever.cpp.i
+.PHONY : unit_tests/test_bm25_retriever.i
+
+# target to preprocess a source file
+unit_tests/test_bm25_retriever.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_retriever.cpp.i
+.PHONY : unit_tests/test_bm25_retriever.cpp.i
+
+unit_tests/test_bm25_retriever.s: unit_tests/test_bm25_retriever.cpp.s
+.PHONY : unit_tests/test_bm25_retriever.s
+
+# target to generate assembly for a file
+unit_tests/test_bm25_retriever.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_retriever.cpp.s
+.PHONY : unit_tests/test_bm25_retriever.cpp.s
+
+unit_tests/test_bm25_simd_tfidf.o: unit_tests/test_bm25_simd_tfidf.cpp.o
+.PHONY : unit_tests/test_bm25_simd_tfidf.o
+
+# target to build an object file
+unit_tests/test_bm25_simd_tfidf.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_simd_tfidf.cpp.o
+.PHONY : unit_tests/test_bm25_simd_tfidf.cpp.o
+
+unit_tests/test_bm25_simd_tfidf.i: unit_tests/test_bm25_simd_tfidf.cpp.i
+.PHONY : unit_tests/test_bm25_simd_tfidf.i
+
+# target to preprocess a source file
+unit_tests/test_bm25_simd_tfidf.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_simd_tfidf.cpp.i
+.PHONY : unit_tests/test_bm25_simd_tfidf.cpp.i
+
+unit_tests/test_bm25_simd_tfidf.s: unit_tests/test_bm25_simd_tfidf.cpp.s
+.PHONY : unit_tests/test_bm25_simd_tfidf.s
+
+# target to generate assembly for a file
+unit_tests/test_bm25_simd_tfidf.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_bm25_simd_tfidf.cpp.s
+.PHONY : unit_tests/test_bm25_simd_tfidf.cpp.s
+
 unit_tests/test_core_config.o: unit_tests/test_core_config.cpp.o
 .PHONY : unit_tests/test_core_config.o
 
@@ -445,6 +493,12 @@ help:
 	@echo "... unit_tests/test_base_retriever.o"
 	@echo "... unit_tests/test_base_retriever.i"
 	@echo "... unit_tests/test_base_retriever.s"
+	@echo "... unit_tests/test_bm25_retriever.o"
+	@echo "... unit_tests/test_bm25_retriever.i"
+	@echo "... unit_tests/test_bm25_retriever.s"
+	@echo "... unit_tests/test_bm25_simd_tfidf.o"
+	@echo "... unit_tests/test_bm25_simd_tfidf.i"
+	@echo "... unit_tests/test_bm25_simd_tfidf.s"
 	@echo "... unit_tests/test_core_config.o"
 	@echo "... unit_tests/test_core_config.i"
 	@echo "... unit_tests/test_core_config.s"
