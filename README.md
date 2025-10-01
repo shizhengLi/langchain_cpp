@@ -27,7 +27,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/langchain-impl-cpp.git
+git clone https://github.com/shizhengLi/langchain_cpp
 cd langchain-impl-cpp
 
 # Configure build
