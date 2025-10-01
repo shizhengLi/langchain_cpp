@@ -271,6 +271,30 @@ src/core/types.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/core/types.cpp.s
 .PHONY : src/core/types.cpp.s
 
+src/retrievers/inverted_index_retriever.o: src/retrievers/inverted_index_retriever.cpp.o
+.PHONY : src/retrievers/inverted_index_retriever.o
+
+# target to build an object file
+src/retrievers/inverted_index_retriever.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o
+.PHONY : src/retrievers/inverted_index_retriever.cpp.o
+
+src/retrievers/inverted_index_retriever.i: src/retrievers/inverted_index_retriever.cpp.i
+.PHONY : src/retrievers/inverted_index_retriever.i
+
+# target to preprocess a source file
+src/retrievers/inverted_index_retriever.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.i
+.PHONY : src/retrievers/inverted_index_retriever.cpp.i
+
+src/retrievers/inverted_index_retriever.s: src/retrievers/inverted_index_retriever.cpp.s
+.PHONY : src/retrievers/inverted_index_retriever.s
+
+# target to generate assembly for a file
+src/retrievers/inverted_index_retriever.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.s
+.PHONY : src/retrievers/inverted_index_retriever.cpp.s
+
 src/text/text_processor.o: src/text/text_processor.cpp.o
 .PHONY : src/text/text_processor.o
 
@@ -414,6 +438,9 @@ help:
 	@echo "... src/core/types.o"
 	@echo "... src/core/types.i"
 	@echo "... src/core/types.s"
+	@echo "... src/retrievers/inverted_index_retriever.o"
+	@echo "... src/retrievers/inverted_index_retriever.i"
+	@echo "... src/retrievers/inverted_index_retriever.s"
 	@echo "... src/text/text_processor.o"
 	@echo "... src/text/text_processor.i"
 	@echo "... src/text/text_processor.s"

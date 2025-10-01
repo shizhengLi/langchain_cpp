@@ -67,7 +67,8 @@ public:
          */
         void update_idf(size_t total_docs) {
             if (document_frequency > 0) {
-                idf = std::log(static_cast<double>(total_docs) / document_frequency);
+                // IDF smoothing to avoid zero values in small corpora
+                idf = std::log((static_cast<double>(total_docs) + 1.0) / document_frequency) + 1.0;
             } else {
                 idf = 0.0;
             }
@@ -76,7 +77,7 @@ public:
 
 private:
     Config config_;
-    std::unique_ptr<TextProcessor> text_processor_;
+    std::unique_ptr<text::TextProcessor> text_processor_;
 
     // Core inverted index data structures
     std::unordered_map<std::string, TermInfo> inverted_index_;
@@ -102,8 +103,8 @@ public:
      * @param text_processor Text processor for tokenization
      */
     explicit InvertedIndexRetriever(
-        const Config& config = {},
-        std::unique_ptr<TextProcessor> text_processor = nullptr);
+        const Config& config,
+        std::unique_ptr<text::TextProcessor> text_processor = nullptr);
 
     /**
      * @brief Destructor
@@ -127,14 +128,14 @@ public:
      * @param term Search term
      * @return Vector of posting entries (empty if term not found)
      */
-    std::vector<PostingEntry> get_postings(const std::string& term) const;
+    std::vector<PostingEntry> get_postings(const std::string& term);
 
     /**
      * @brief Get term information (for debugging/analysis)
      * @param term Search term
      * @return Term info (empty if term not found)
      */
-    TermInfo get_term_info(const std::string& term) const;
+    TermInfo get_term_info(const std::string& term);
 
     /**
      * @brief Get most frequent terms in the corpus
@@ -212,12 +213,12 @@ private:
      * @brief Update term cache statistics
      * @param term Term that was accessed
      */
-    void update_cache_stats(const std::string& term) const;
+    void update_cache_stats(const std::string& term);
 
     /**
      * @brief Cleanup least recently used cache entries
      */
-    void cleanup_cache() const;
+    void cleanup_cache();
 
     /**
      * @brief Generate document ID

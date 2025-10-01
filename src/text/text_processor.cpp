@@ -262,7 +262,7 @@ std::unique_ptr<TextProcessor> TextProcessorFactory::create_retrieval_processor(
     config.enable_stemming = true;
     config.language = "english";
     config.min_token_length = 2;
-    config.max_token_length = 20;
+    config.max_token_length = 50;
 
     return std::make_unique<TextProcessor>(config);
 }

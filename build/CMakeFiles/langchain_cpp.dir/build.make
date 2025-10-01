@@ -170,6 +170,20 @@ CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/text/text_processor.cpp -o CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.s
 
+CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o: CMakeFiles/langchain_cpp.dir/flags.make
+CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/inverted_index_retriever.cpp
+CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o: CMakeFiles/langchain_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o -MF CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o.d -o CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/inverted_index_retriever.cpp
+
+CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/inverted_index_retriever.cpp > CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.i
+
+CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lishizheng/Desktop/Code/langchain-impl-cpp/src/retrievers/inverted_index_retriever.cpp -o CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.s
+
 # Object files for target langchain_cpp
 langchain_cpp_OBJECTS = \
 "CMakeFiles/langchain_cpp.dir/src/core/types.cpp.o" \
@@ -178,7 +192,8 @@ langchain_cpp_OBJECTS = \
 "CMakeFiles/langchain_cpp.dir/src/utils/thread_pool.cpp.o" \
 "CMakeFiles/langchain_cpp.dir/src/utils/logging.cpp.o" \
 "CMakeFiles/langchain_cpp.dir/src/utils/simd_ops.cpp.o" \
-"CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o"
+"CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o" \
+"CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o"
 
 # External object files for target langchain_cpp
 langchain_cpp_EXTERNAL_OBJECTS =
@@ -190,9 +205,10 @@ liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/utils/thread_pool.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/utils/logging.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/utils/simd_ops.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o
+liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.o
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/build.make
 liblangchain_cpp.a: CMakeFiles/langchain_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library liblangchain_cpp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library liblangchain_cpp.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/langchain_cpp.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/langchain_cpp.dir/link.txt --verbose=$(VERBOSE)
 

@@ -11,6 +11,7 @@ target_sources(unit_tests PRIVATE
     unit_tests/test_simd_ops.cpp
     unit_tests/test_base_retriever.cpp
     unit_tests/test_text_processor.cpp
+    unit_tests/test_inverted_index_retriever.cpp
     unit_tests/main.cpp
 )
 

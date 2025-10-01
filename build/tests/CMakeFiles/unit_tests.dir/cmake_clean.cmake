@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/unit_tests.dir/unit_tests/test_core_config.cpp.o.d"
   "CMakeFiles/unit_tests.dir/unit_tests/test_core_types.cpp.o"
   "CMakeFiles/unit_tests.dir/unit_tests/test_core_types.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.o"
+  "CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.o.d"
   "CMakeFiles/unit_tests.dir/unit_tests/test_logging.cpp.o"
   "CMakeFiles/unit_tests.dir/unit_tests/test_logging.cpp.o.d"
   "CMakeFiles/unit_tests.dir/unit_tests/test_memory_pool.cpp.o"

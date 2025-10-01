@@ -281,6 +281,30 @@ unit_tests/test_core_types.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_core_types.cpp.s
 .PHONY : unit_tests/test_core_types.cpp.s
 
+unit_tests/test_inverted_index_retriever.o: unit_tests/test_inverted_index_retriever.cpp.o
+.PHONY : unit_tests/test_inverted_index_retriever.o
+
+# target to build an object file
+unit_tests/test_inverted_index_retriever.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.o
+.PHONY : unit_tests/test_inverted_index_retriever.cpp.o
+
+unit_tests/test_inverted_index_retriever.i: unit_tests/test_inverted_index_retriever.cpp.i
+.PHONY : unit_tests/test_inverted_index_retriever.i
+
+# target to preprocess a source file
+unit_tests/test_inverted_index_retriever.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.i
+.PHONY : unit_tests/test_inverted_index_retriever.cpp.i
+
+unit_tests/test_inverted_index_retriever.s: unit_tests/test_inverted_index_retriever.cpp.s
+.PHONY : unit_tests/test_inverted_index_retriever.s
+
+# target to generate assembly for a file
+unit_tests/test_inverted_index_retriever.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_inverted_index_retriever.cpp.s
+.PHONY : unit_tests/test_inverted_index_retriever.cpp.s
+
 unit_tests/test_logging.o: unit_tests/test_logging.cpp.o
 .PHONY : unit_tests/test_logging.o
 
@@ -427,6 +451,9 @@ help:
 	@echo "... unit_tests/test_core_types.o"
 	@echo "... unit_tests/test_core_types.i"
 	@echo "... unit_tests/test_core_types.s"
+	@echo "... unit_tests/test_inverted_index_retriever.o"
+	@echo "... unit_tests/test_inverted_index_retriever.i"
+	@echo "... unit_tests/test_inverted_index_retriever.s"
 	@echo "... unit_tests/test_logging.o"
 	@echo "... unit_tests/test_logging.i"
 	@echo "... unit_tests/test_logging.s"
