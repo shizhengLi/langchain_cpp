@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -flto=thin -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/performance_example.dir/performance_example.cpp.o -o performance_example  ../liblangchain_cpp.a /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libssl.dylib /opt/homebrew/lib/libcrypto.dylib

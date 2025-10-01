@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/lishizheng/Desktop/Code/langchain-impl-cpp/include
+CXX_INCLUDES = -I/Users/lishizheng/Desktop/Code/langchain-impl-cpp/include -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -O3 -DNDEBUG -std=c++20 -arch arm64 -O3 -march=native -Wall -Wextra -Wpedantic -Wno-unused-parameter -flto
 

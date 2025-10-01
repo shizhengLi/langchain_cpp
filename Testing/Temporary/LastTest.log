@@ -1,0 +1,21 @@
+Start testing: Oct 01 20:27 CST
+----------------------------------------------------------
+Unable to find executable: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests
+1/1 Testing: UnitTests
+1/1 Test: UnitTests
+Command: ""
+Directory: /Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests
+"UnitTests" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression not found. Regex=[All tests passed
+]
+"UnitTests" end time: Oct 01 20:27 CST
+"UnitTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 01 20:27 CST

@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/opt/homebrew/bin/ctest $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -211,41 +201,43 @@ Catch2WithMain/fast:
 .PHONY : Catch2WithMain/fast
 
 #=============================================================================
-# Target rules for targets named unit_tests
+# Target rules for targets named basic_retrieval
 
 # Build rule for target.
-unit_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_tests
-.PHONY : unit_tests
+basic_retrieval: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 basic_retrieval
+.PHONY : basic_retrieval
 
 # fast build rule for target.
-unit_tests/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
-.PHONY : unit_tests/fast
+basic_retrieval/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/basic_retrieval.dir/build.make examples/CMakeFiles/basic_retrieval.dir/build
+.PHONY : basic_retrieval/fast
 
-src/agents/agent.o: src/agents/agent.cpp.o
-.PHONY : src/agents/agent.o
+#=============================================================================
+# Target rules for targets named production_setup
 
-# target to build an object file
-src/agents/agent.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/agents/agent.cpp.o
-.PHONY : src/agents/agent.cpp.o
+# Build rule for target.
+production_setup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 production_setup
+.PHONY : production_setup
 
-src/agents/agent.i: src/agents/agent.cpp.i
-.PHONY : src/agents/agent.i
+# fast build rule for target.
+production_setup/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/production_setup.dir/build.make examples/CMakeFiles/production_setup.dir/build
+.PHONY : production_setup/fast
 
-# target to preprocess a source file
-src/agents/agent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/agents/agent.cpp.i
-.PHONY : src/agents/agent.cpp.i
+#=============================================================================
+# Target rules for targets named examples
 
-src/agents/agent.s: src/agents/agent.cpp.s
-.PHONY : src/agents/agent.s
+# Build rule for target.
+examples: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples
+.PHONY : examples
 
-# target to generate assembly for a file
-src/agents/agent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/agents/agent.cpp.s
-.PHONY : src/agents/agent.cpp.s
+# fast build rule for target.
+examples/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/build
+.PHONY : examples/fast
 
 src/chains/llm_chain.o: src/chains/llm_chain.cpp.o
 .PHONY : src/chains/llm_chain.o
@@ -343,6 +335,30 @@ src/core/types.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/core/types.cpp.s
 .PHONY : src/core/types.cpp.s
 
+src/distributed/distributed_processing.o: src/distributed/distributed_processing.cpp.o
+.PHONY : src/distributed/distributed_processing.o
+
+# target to build an object file
+src/distributed/distributed_processing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/distributed/distributed_processing.cpp.o
+.PHONY : src/distributed/distributed_processing.cpp.o
+
+src/distributed/distributed_processing.i: src/distributed/distributed_processing.cpp.i
+.PHONY : src/distributed/distributed_processing.i
+
+# target to preprocess a source file
+src/distributed/distributed_processing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/distributed/distributed_processing.cpp.i
+.PHONY : src/distributed/distributed_processing.cpp.i
+
+src/distributed/distributed_processing.s: src/distributed/distributed_processing.cpp.s
+.PHONY : src/distributed/distributed_processing.s
+
+# target to generate assembly for a file
+src/distributed/distributed_processing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/distributed/distributed_processing.cpp.s
+.PHONY : src/distributed/distributed_processing.cpp.s
+
 src/llm/base_llm.o: src/llm/base_llm.cpp.o
 .PHONY : src/llm/base_llm.o
 
@@ -414,6 +430,54 @@ src/memory/memory.s: src/memory/memory.cpp.s
 src/memory/memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/memory/memory.cpp.s
 .PHONY : src/memory/memory.cpp.s
+
+src/metrics/metrics.o: src/metrics/metrics.cpp.o
+.PHONY : src/metrics/metrics.o
+
+# target to build an object file
+src/metrics/metrics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.o
+.PHONY : src/metrics/metrics.cpp.o
+
+src/metrics/metrics.i: src/metrics/metrics.cpp.i
+.PHONY : src/metrics/metrics.i
+
+# target to preprocess a source file
+src/metrics/metrics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.i
+.PHONY : src/metrics/metrics.cpp.i
+
+src/metrics/metrics.s: src/metrics/metrics.cpp.s
+.PHONY : src/metrics/metrics.s
+
+# target to generate assembly for a file
+src/metrics/metrics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/metrics/metrics.cpp.s
+.PHONY : src/metrics/metrics.cpp.s
+
+src/persistence/persistence.o: src/persistence/persistence.cpp.o
+.PHONY : src/persistence/persistence.o
+
+# target to build an object file
+src/persistence/persistence.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/persistence/persistence.cpp.o
+.PHONY : src/persistence/persistence.cpp.o
+
+src/persistence/persistence.i: src/persistence/persistence.cpp.i
+.PHONY : src/persistence/persistence.i
+
+# target to preprocess a source file
+src/persistence/persistence.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/persistence/persistence.cpp.i
+.PHONY : src/persistence/persistence.cpp.i
+
+src/persistence/persistence.s: src/persistence/persistence.cpp.s
+.PHONY : src/persistence/persistence.s
+
+# target to generate assembly for a file
+src/persistence/persistence.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/persistence/persistence.cpp.s
+.PHONY : src/persistence/persistence.cpp.s
 
 src/prompts/prompt_template.o: src/prompts/prompt_template.cpp.o
 .PHONY : src/prompts/prompt_template.o
@@ -510,6 +574,30 @@ src/retrievers/inverted_index_retriever.s: src/retrievers/inverted_index_retriev
 src/retrievers/inverted_index_retriever.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/retrievers/inverted_index_retriever.cpp.s
 .PHONY : src/retrievers/inverted_index_retriever.cpp.s
+
+src/security/security.o: src/security/security.cpp.o
+.PHONY : src/security/security.o
+
+# target to build an object file
+src/security/security.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/security/security.cpp.o
+.PHONY : src/security/security.cpp.o
+
+src/security/security.i: src/security/security.cpp.i
+.PHONY : src/security/security.i
+
+# target to preprocess a source file
+src/security/security.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/security/security.cpp.i
+.PHONY : src/security/security.cpp.i
+
+src/security/security.s: src/security/security.cpp.s
+.PHONY : src/security/security.s
+
+# target to generate assembly for a file
+src/security/security.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/security/security.cpp.s
+.PHONY : src/security/security.cpp.s
 
 src/text/text_processor.o: src/text/text_processor.cpp.o
 .PHONY : src/text/text_processor.o
@@ -667,14 +755,12 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... test"
+	@echo "... examples"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
+	@echo "... basic_retrieval"
 	@echo "... langchain_cpp"
-	@echo "... unit_tests"
-	@echo "... src/agents/agent.o"
-	@echo "... src/agents/agent.i"
-	@echo "... src/agents/agent.s"
+	@echo "... production_setup"
 	@echo "... src/chains/llm_chain.o"
 	@echo "... src/chains/llm_chain.i"
 	@echo "... src/chains/llm_chain.s"
@@ -687,6 +773,9 @@ help:
 	@echo "... src/core/types.o"
 	@echo "... src/core/types.i"
 	@echo "... src/core/types.s"
+	@echo "... src/distributed/distributed_processing.o"
+	@echo "... src/distributed/distributed_processing.i"
+	@echo "... src/distributed/distributed_processing.s"
 	@echo "... src/llm/base_llm.o"
 	@echo "... src/llm/base_llm.i"
 	@echo "... src/llm/base_llm.s"
@@ -696,6 +785,12 @@ help:
 	@echo "... src/memory/memory.o"
 	@echo "... src/memory/memory.i"
 	@echo "... src/memory/memory.s"
+	@echo "... src/metrics/metrics.o"
+	@echo "... src/metrics/metrics.i"
+	@echo "... src/metrics/metrics.s"
+	@echo "... src/persistence/persistence.o"
+	@echo "... src/persistence/persistence.i"
+	@echo "... src/persistence/persistence.s"
 	@echo "... src/prompts/prompt_template.o"
 	@echo "... src/prompts/prompt_template.i"
 	@echo "... src/prompts/prompt_template.s"
@@ -708,6 +803,9 @@ help:
 	@echo "... src/retrievers/inverted_index_retriever.o"
 	@echo "... src/retrievers/inverted_index_retriever.i"
 	@echo "... src/retrievers/inverted_index_retriever.s"
+	@echo "... src/security/security.o"
+	@echo "... src/security/security.i"
+	@echo "... src/security/security.s"
 	@echo "... src/text/text_processor.o"
 	@echo "... src/text/text_processor.i"
 	@echo "... src/text/text_processor.s"

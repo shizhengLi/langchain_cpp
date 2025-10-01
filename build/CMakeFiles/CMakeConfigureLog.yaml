@@ -20,8 +20,6 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -33,10 +31,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/uname"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/uname"
       - "/opt/homebrew/bin/uname"
       - "/opt/homebrew/sbin/uname"
       - "/usr/local/bin/uname"
@@ -44,8 +43,6 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -57,7 +54,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "message-v1"
     backtrace:
@@ -86,8 +86,6 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -99,10 +97,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/gmake"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/gmake"
       - "/opt/homebrew/bin/gmake"
       - "/opt/homebrew/sbin/gmake"
       - "/usr/local/bin/gmake"
@@ -114,9 +113,10 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/gmake"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/gmake"
       - "/Users/lishizheng/.cargo/bin/gmake"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/make"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/make"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/gmake"
       - "/opt/homebrew/bin/make"
       - "/opt/homebrew/sbin/make"
       - "/usr/local/bin/make"
@@ -124,8 +124,6 @@ events:
     found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -137,7 +135,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -164,8 +165,6 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -177,10 +176,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/c++"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/c++"
       - "/opt/homebrew/bin/c++"
       - "/opt/homebrew/sbin/c++"
       - "/usr/local/bin/c++"
@@ -188,8 +188,6 @@ events:
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -201,7 +199,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -229,8 +230,6 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -242,7 +241,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "message-v1"
     backtrace:
@@ -327,8 +329,6 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -339,12 +339,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -356,7 +357,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -378,8 +382,6 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -390,12 +392,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -407,7 +410,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -429,8 +435,6 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -441,12 +445,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -458,7 +463,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -480,8 +488,6 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -492,12 +498,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -509,7 +516,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -531,8 +541,6 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -543,12 +551,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -560,7 +569,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -582,8 +594,6 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -594,12 +604,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -611,7 +622,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -633,8 +647,6 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -645,11 +657,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/bin/objcopy"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/objcopy"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/objcopy"
       - "/opt/homebrew/bin/objcopy"
       - "/opt/homebrew/sbin/objcopy"
       - "/usr/local/bin/objcopy"
@@ -660,12 +673,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/objcopy"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/objcopy"
       - "/Users/lishizheng/.cargo/bin/objcopy"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/objcopy"
     found: false
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -677,7 +691,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -699,8 +716,6 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -711,11 +726,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/bin/readelf"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/readelf"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/readelf"
       - "/opt/homebrew/bin/readelf"
       - "/opt/homebrew/sbin/readelf"
       - "/usr/local/bin/readelf"
@@ -726,12 +742,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/readelf"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/readelf"
       - "/Users/lishizheng/.cargo/bin/readelf"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/readelf"
     found: false
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -743,7 +760,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -765,8 +785,6 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -777,11 +795,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/bin/dlltool"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/dlltool"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/dlltool"
       - "/opt/homebrew/bin/dlltool"
       - "/opt/homebrew/sbin/dlltool"
       - "/usr/local/bin/dlltool"
@@ -792,12 +811,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/dlltool"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/dlltool"
       - "/Users/lishizheng/.cargo/bin/dlltool"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -809,7 +829,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -831,8 +854,6 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -843,11 +864,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/bin/addr2line"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/addr2line"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/addr2line"
       - "/opt/homebrew/bin/addr2line"
       - "/opt/homebrew/sbin/addr2line"
       - "/usr/local/bin/addr2line"
@@ -858,12 +880,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/addr2line"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/addr2line"
       - "/Users/lishizheng/.cargo/bin/addr2line"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/addr2line"
     found: false
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -875,7 +898,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -897,8 +923,6 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -909,11 +933,12 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
       - "/usr/bin/tapi"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/tapi"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/tapi"
       - "/opt/homebrew/bin/tapi"
       - "/opt/homebrew/sbin/tapi"
       - "/usr/local/bin/tapi"
@@ -924,12 +949,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/tapi"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/tapi"
       - "/Users/lishizheng/.cargo/bin/tapi"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -941,7 +967,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "find-v1"
     backtrace:
@@ -962,8 +991,6 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -975,10 +1002,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/install_name_tool"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/install_name_tool"
       - "/opt/homebrew/bin/install_name_tool"
       - "/opt/homebrew/sbin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -986,8 +1014,6 @@ events:
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -999,7 +1025,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
   -
     kind: "try_compile-v1"
@@ -1010,8 +1039,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-A5NHjG"
-      binary: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-A5NHjG"
+      source: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-9aKXaD"
+      binary: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-9aKXaD"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1024,19 +1053,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-A5NHjG'
+        Change Dir: '/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-9aKXaD'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b2532/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b2532.dir/build.make CMakeFiles/cmTC_b2532.dir/build
-        Building CXX object CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9bb45/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9bb45.dir/build.make CMakeFiles/cmTC_9bb45.dir/build
+        Building CXX object CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-A5NHjG -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-A5NHjG -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-9aKXaD -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-9aKXaD -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin24.6.0
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks"
@@ -1050,13 +1079,13 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_b2532
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2532.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_9bb45
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bb45.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin24.6.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b2532 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_9bb45 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1167.5
         BUILD 01:45:05 Apr 30 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -1069,7 +1098,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_b2532
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9bb45
         
       exitCode: 0
   -
@@ -1115,19 +1144,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-A5NHjG']
+        ignore line: [Change Dir: '/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-9aKXaD']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b2532/fast]
-        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b2532.dir/build.make CMakeFiles/cmTC_b2532.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9bb45/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9bb45.dir/build.make CMakeFiles/cmTC_9bb45.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-A5NHjG -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-A5NHjG -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-9aKXaD -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-9aKXaD -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin24.6.0]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/SubFrameworks"]
@@ -1141,13 +1170,13 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_b2532]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2532.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_9bb45]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bb45.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin24.6.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_b2532 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_9bb45 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1164,12 +1193,12 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b2532] ==> ignore
+          arg [cmTC_9bb45] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b2532.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_9bb45.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
@@ -1215,8 +1244,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-WL880V"
-      binary: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-WL880V"
+      source: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-IaKVMv"
+      binary: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-IaKVMv"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1228,15 +1257,15 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-WL880V'
+        Change Dir: '/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-IaKVMv'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1b55/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f1b55.dir/build.make CMakeFiles/cmTC_f1b55.dir/build
-        Building CXX object CMakeFiles/cmTC_f1b55.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++20 -arch arm64 -MD -MT CMakeFiles/cmTC_f1b55.dir/src.cxx.o -MF CMakeFiles/cmTC_f1b55.dir/src.cxx.o.d -o CMakeFiles/cmTC_f1b55.dir/src.cxx.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-WL880V/src.cxx
-        Linking CXX executable cmTC_f1b55
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1b55.dir/link.txt --verbose=1
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f1b55.dir/src.cxx.o -o cmTC_f1b55
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_18b2f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_18b2f.dir/build.make CMakeFiles/cmTC_18b2f.dir/build
+        Building CXX object CMakeFiles/cmTC_18b2f.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++20 -arch arm64 -MD -MT CMakeFiles/cmTC_18b2f.dir/src.cxx.o -MF CMakeFiles/cmTC_18b2f.dir/src.cxx.o.d -o CMakeFiles/cmTC_18b2f.dir/src.cxx.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-IaKVMv/src.cxx
+        Linking CXX executable cmTC_18b2f
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18b2f.dir/link.txt --verbose=1
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_18b2f.dir/src.cxx.o -o cmTC_18b2f
         
       exitCode: 0
   -
@@ -1284,22 +1313,6 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/opt/homebrew/Caskroom/miniforge/base/CURLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/Caskroom/miniforge/base/curl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/Caskroom/miniforge/base/condabin/CURLConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/Caskroom/miniforge/base/condabin/curl-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/opt/homebrew/CURLConfig.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1340,11 +1353,35 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/opt/homebrew/Caskroom/miniforge/base/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/Caskroom/miniforge/base/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/Caskroom/miniforge/base/condabin/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/Caskroom/miniforge/base/condabin/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/Users/lishizheng/.cargo/CURLConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
         path: "/Users/lishizheng/.cargo/curl-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/CURLConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/curl-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -1414,8 +1451,6 @@ events:
     found: null
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1427,7 +1462,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -1473,8 +1511,6 @@ events:
       - "pkg-config"
       - "pkgconf"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1486,7 +1522,10 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
@@ -1519,10 +1558,6 @@ events:
       - "/Users/lishizheng/Applications/"
       - "/Applications/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/pkg-config"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/pkgconf"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/pkg-config"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/pkgconf"
       - "/opt/homebrew/bin/pkg-config"
       - "/opt/homebrew/bin/pkgconf"
       - "/opt/homebrew/sbin/pkg-config"
@@ -1545,8 +1580,14 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/pkgconf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/pkg-config"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/pkgconf"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/pkg-config"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/pkgconf"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/pkg-config"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/pkgconf"
       - "/Users/lishizheng/.cargo/bin/pkg-config"
       - "/Users/lishizheng/.cargo/bin/pkgconf"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/pkg-config"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/pkgconf"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/pkg-config"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/pkgconf"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/pkg-config"
@@ -1612,8 +1653,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1625,7 +1664,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -1662,8 +1704,6 @@ events:
     names:
       - "curl/curl.h"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1675,7 +1715,10 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/include/"
@@ -1705,8 +1748,6 @@ events:
       - "/Network/Library/Frameworks/"
       - "/System/Library/Frameworks/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/curl.framework/Headers/curl.h"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/curl.framework/Headers/curl.h"
       - "/opt/homebrew/bin/curl.framework/Headers/curl.h"
       - "/opt/homebrew/sbin/curl.framework/Headers/curl.h"
       - "/usr/local/bin/curl.framework/Headers/curl.h"
@@ -1718,7 +1759,10 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/curl.framework/Headers/curl.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/curl.framework/Headers/curl.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/curl.framework/Headers/curl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/curl.framework/Headers/curl.h"
       - "/Users/lishizheng/.cargo/bin/curl.framework/Headers/curl.h"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/curl.framework/Headers/curl.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl.framework/Headers/curl.h"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/curl.framework/Headers/curl.h"
       - "/opt/homebrew/include/curl.framework/Headers/curl.h"
@@ -1747,8 +1791,6 @@ events:
       - "/Library/Frameworks/curl.framework/Headers/curl.h"
       - "/Network/Library/Frameworks/curl.framework/Headers/curl.h"
       - "/System/Library/Frameworks/curl.framework/Headers/curl.h"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/curl/curl.h"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/curl/curl.h"
       - "/opt/homebrew/bin/curl/curl.h"
       - "/opt/homebrew/sbin/curl/curl.h"
       - "/usr/local/bin/curl/curl.h"
@@ -1760,12 +1802,13 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/curl/curl.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/curl/curl.h"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/curl/curl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/curl/curl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/curl/curl.h"
       - "/Users/lishizheng/.cargo/bin/curl/curl.h"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/curl/curl.h"
     found: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1777,7 +1820,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -1828,8 +1874,6 @@ events:
       - "libcurl"
       - "libcurl_a"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1838,7 +1882,10 @@ events:
       - "/bin/"
       - "/usr/sbin/"
       - "/sbin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/lib/"
@@ -1853,18 +1900,6 @@ events:
       - "/Library/Frameworks/"
       - "/System/Library/Frameworks/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/bin/"
@@ -1913,17 +1948,33 @@ events:
       - "/sbin/"
       - "/sbin/"
       - "/sbin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
       - "/Users/lishizheng/.cargo/bin/"
       - "/Users/lishizheng/.cargo/bin/"
       - "/Users/lishizheng/.cargo/bin/"
       - "/Users/lishizheng/.cargo/bin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     found: "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -1935,7 +1986,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -1982,8 +2036,6 @@ events:
       - "libcurl-d_imp"
       - "libcurl-d"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -1992,7 +2044,10 @@ events:
       - "/bin/"
       - "/usr/sbin/"
       - "/sbin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
       - "/opt/homebrew/lib/"
@@ -2007,10 +2062,6 @@ events:
       - "/Library/Frameworks/"
       - "/System/Library/Frameworks/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
@@ -2027,8 +2078,14 @@ events:
       - "/usr/sbin/"
       - "/sbin/"
       - "/sbin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
@@ -2058,8 +2115,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -2071,7 +2126,529 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenSSL.cmake:336 (find_path)"
+      - "CMakeLists.txt:21 (find_package)"
+    mode: "path"
+    variable: "OPENSSL_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "openssl/ssl.h"
+    candidate_directories:
+      - "/opt/homebrew/bin/include/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/include/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/include/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/include/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/include/"
+      - "/usr/bin/"
+      - "/bin/include/"
+      - "/bin/"
+      - "/usr/sbin/include/"
+      - "/usr/sbin/"
+      - "/sbin/include/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/include/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/include/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/include/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/include/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/include/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/Users/lishizheng/.cargo/bin/include/"
+      - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/include/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/include/include/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/include/"
+      - "/opt/homebrew/"
+      - "/usr/local/include/include/"
+      - "/usr/local/include/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/include/"
+      - "/usr/include/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/include/"
+      - "/include/"
+      - "/usr/X11R6/include/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/include/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/include/"
+      - "/opt/include/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/sw/include/include/"
+      - "/sw/include/"
+      - "/sw/include/"
+      - "/sw/"
+      - "/opt/local/include/include/"
+      - "/opt/local/include/"
+      - "/opt/local/include/"
+      - "/opt/local/"
+      - "/usr/include/X11/include/"
+      - "/usr/include/X11/"
+      - "/Users/lishizheng/Library/Frameworks/include/"
+      - "/Users/lishizheng/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/include/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/include/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/include/"
+      - "/Library/Frameworks/"
+      - "/Network/Library/Frameworks/include/"
+      - "/Network/Library/Frameworks/"
+      - "/System/Library/Frameworks/include/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/opt/homebrew/bin/include/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/bin/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/sbin/include/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/sbin/openssl.framework/Headers/ssl.h"
+      - "/usr/local/bin/include/openssl.framework/Headers/ssl.h"
+      - "/usr/local/bin/openssl.framework/Headers/ssl.h"
+      - "/System/Cryptexes/App/usr/bin/include/openssl.framework/Headers/ssl.h"
+      - "/System/Cryptexes/App/usr/bin/openssl.framework/Headers/ssl.h"
+      - "/usr/bin/include/openssl.framework/Headers/ssl.h"
+      - "/usr/bin/openssl.framework/Headers/ssl.h"
+      - "/bin/include/openssl.framework/Headers/ssl.h"
+      - "/bin/openssl.framework/Headers/ssl.h"
+      - "/usr/sbin/include/openssl.framework/Headers/ssl.h"
+      - "/usr/sbin/openssl.framework/Headers/ssl.h"
+      - "/sbin/include/openssl.framework/Headers/ssl.h"
+      - "/sbin/openssl.framework/Headers/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/include/openssl.framework/Headers/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/openssl.framework/Headers/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/include/openssl.framework/Headers/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/openssl.framework/Headers/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/include/openssl.framework/Headers/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/include/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/include/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/openssl.framework/Headers/ssl.h"
+      - "/Users/lishizheng/.cargo/bin/include/openssl.framework/Headers/ssl.h"
+      - "/Users/lishizheng/.cargo/bin/openssl.framework/Headers/ssl.h"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/include/openssl.framework/Headers/ssl.h"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/include/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/include/include/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/include/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/include/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/openssl.framework/Headers/ssl.h"
+      - "/usr/local/include/include/openssl.framework/Headers/ssl.h"
+      - "/usr/local/include/openssl.framework/Headers/ssl.h"
+      - "/usr/local/include/openssl.framework/Headers/ssl.h"
+      - "/usr/local/openssl.framework/Headers/ssl.h"
+      - "/usr/include/include/openssl.framework/Headers/ssl.h"
+      - "/usr/include/openssl.framework/Headers/ssl.h"
+      - "/usr/include/openssl.framework/Headers/ssl.h"
+      - "/usr/openssl.framework/Headers/ssl.h"
+      - "/include/include/openssl.framework/Headers/ssl.h"
+      - "/include/openssl.framework/Headers/ssl.h"
+      - "/usr/X11R6/include/include/openssl.framework/Headers/ssl.h"
+      - "/usr/X11R6/include/openssl.framework/Headers/ssl.h"
+      - "/usr/X11R6/include/openssl.framework/Headers/ssl.h"
+      - "/usr/X11R6/openssl.framework/Headers/ssl.h"
+      - "/usr/pkg/include/include/openssl.framework/Headers/ssl.h"
+      - "/usr/pkg/include/openssl.framework/Headers/ssl.h"
+      - "/usr/pkg/include/openssl.framework/Headers/ssl.h"
+      - "/usr/pkg/openssl.framework/Headers/ssl.h"
+      - "/opt/include/include/openssl.framework/Headers/ssl.h"
+      - "/opt/include/openssl.framework/Headers/ssl.h"
+      - "/opt/include/openssl.framework/Headers/ssl.h"
+      - "/opt/openssl.framework/Headers/ssl.h"
+      - "/sw/include/include/openssl.framework/Headers/ssl.h"
+      - "/sw/include/openssl.framework/Headers/ssl.h"
+      - "/sw/include/openssl.framework/Headers/ssl.h"
+      - "/sw/openssl.framework/Headers/ssl.h"
+      - "/opt/local/include/include/openssl.framework/Headers/ssl.h"
+      - "/opt/local/include/openssl.framework/Headers/ssl.h"
+      - "/opt/local/include/openssl.framework/Headers/ssl.h"
+      - "/opt/local/openssl.framework/Headers/ssl.h"
+      - "/usr/include/X11/include/openssl.framework/Headers/ssl.h"
+      - "/usr/include/X11/openssl.framework/Headers/ssl.h"
+      - "/Users/lishizheng/Library/Frameworks/include/openssl.framework/Headers/ssl.h"
+      - "/Users/lishizheng/Library/Frameworks/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/include/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/include/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/include/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/include/openssl.framework/Headers/ssl.h"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/openssl.framework/Headers/ssl.h"
+      - "/Library/Frameworks/include/openssl.framework/Headers/ssl.h"
+      - "/Library/Frameworks/openssl.framework/Headers/ssl.h"
+      - "/Network/Library/Frameworks/include/openssl.framework/Headers/ssl.h"
+      - "/Network/Library/Frameworks/openssl.framework/Headers/ssl.h"
+      - "/System/Library/Frameworks/include/openssl.framework/Headers/ssl.h"
+      - "/System/Library/Frameworks/openssl.framework/Headers/ssl.h"
+      - "/opt/homebrew/bin/include/openssl/ssl.h"
+      - "/opt/homebrew/bin/openssl/ssl.h"
+      - "/opt/homebrew/sbin/include/openssl/ssl.h"
+      - "/opt/homebrew/sbin/openssl/ssl.h"
+      - "/usr/local/bin/include/openssl/ssl.h"
+      - "/usr/local/bin/openssl/ssl.h"
+      - "/System/Cryptexes/App/usr/bin/include/openssl/ssl.h"
+      - "/System/Cryptexes/App/usr/bin/openssl/ssl.h"
+      - "/usr/bin/include/openssl/ssl.h"
+      - "/usr/bin/openssl/ssl.h"
+      - "/bin/include/openssl/ssl.h"
+      - "/bin/openssl/ssl.h"
+      - "/usr/sbin/include/openssl/ssl.h"
+      - "/usr/sbin/openssl/ssl.h"
+      - "/sbin/include/openssl/ssl.h"
+      - "/sbin/openssl/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/include/openssl/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/openssl/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/include/openssl/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/openssl/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/include/openssl/ssl.h"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/openssl/ssl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/include/openssl/ssl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/openssl/ssl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/include/openssl/ssl.h"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/openssl/ssl.h"
+      - "/Users/lishizheng/.cargo/bin/include/openssl/ssl.h"
+      - "/Users/lishizheng/.cargo/bin/openssl/ssl.h"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/include/openssl/ssl.h"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/openssl/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/include/openssl/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/openssl/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/openssl/ssl.h"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/openssl/ssl.h"
+      - "/opt/homebrew/include/include/openssl/ssl.h"
+    found: "/opt/homebrew/include/"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
+        - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenSSL.cmake:594 (find_library)"
+      - "CMakeLists.txt:21 (find_package)"
+    mode: "library"
+    variable: "OPENSSL_SSL_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ssl"
+      - "ssleay32"
+      - "ssleay32MD"
+    candidate_directories:
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/sbin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/usr/sbin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/sbin/"
+      - "/sbin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+    found: "/opt/homebrew/lib/libssl.dylib"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
+        - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/lib/X11"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/FindOpenSSL.cmake:608 (find_library)"
+      - "CMakeLists.txt:21 (find_package)"
+    mode: "library"
+    variable: "OPENSSL_CRYPTO_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "crypto"
+    candidate_directories:
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/lib/"
+      - "/opt/homebrew/"
+      - "/usr/local/lib/"
+      - "/usr/local/lib/"
+      - "/usr/local/"
+      - "/usr/lib/"
+      - "/usr/lib/"
+      - "/usr/"
+      - "/opt/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
+      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
+      - "/Library/Frameworks/"
+      - "/System/Library/Frameworks/"
+    searched_directories:
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
+      - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
+      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
+    found: "/opt/homebrew/lib/libcrypto.dylib"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
+        - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2122,8 +2699,6 @@ events:
     names:
       - "git"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -2135,7 +2710,10 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/bin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/sbin/"
       - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
@@ -2168,8 +2746,6 @@ events:
       - "/Users/lishizheng/Applications/"
       - "/Applications/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/git"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/git"
       - "/opt/homebrew/bin/git"
       - "/opt/homebrew/sbin/git"
       - "/usr/local/bin/git"
@@ -2177,8 +2753,6 @@ events:
     found: "/usr/bin/git"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -2190,7 +2764,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
@@ -2220,8 +2797,8 @@ events:
     checks:
       - "Performing Test HAVE_FLAG__ffile_prefix_map__Users_lishizheng_Desktop_Code_langchain_impl_cpp_build__deps_catch2_src__"
     directories:
-      source: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-HtyUWx"
-      binary: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-HtyUWx"
+      source: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fQbHs9"
+      binary: "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fQbHs9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2234,15 +2811,15 @@ events:
       variable: "HAVE_FLAG__ffile_prefix_map__Users_lishizheng_Desktop_Code_langchain_impl_cpp_build__deps_catch2_src__"
       cached: true
       stdout: |
-        Change Dir: '/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-HtyUWx'
+        Change Dir: '/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fQbHs9'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fa360/fast
-        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fa360.dir/build.make CMakeFiles/cmTC_fa360.dir/build
-        Building CXX object CMakeFiles/cmTC_fa360.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_FLAG__ffile_prefix_map__Users_lishizheng_Desktop_Code_langchain_impl_cpp_build__deps_catch2_src__  -std=c++20 -arch arm64   -ffile-prefix-map=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/_deps/catch2-src/= -MD -MT CMakeFiles/cmTC_fa360.dir/src.cxx.o -MF CMakeFiles/cmTC_fa360.dir/src.cxx.o.d -o CMakeFiles/cmTC_fa360.dir/src.cxx.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-HtyUWx/src.cxx
-        Linking CXX executable cmTC_fa360
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa360.dir/link.txt --verbose=1
-        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_fa360.dir/src.cxx.o -o cmTC_fa360
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92dc1/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_92dc1.dir/build.make CMakeFiles/cmTC_92dc1.dir/build
+        Building CXX object CMakeFiles/cmTC_92dc1.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_FLAG__ffile_prefix_map__Users_lishizheng_Desktop_Code_langchain_impl_cpp_build__deps_catch2_src__  -std=c++20 -arch arm64   -ffile-prefix-map=/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/_deps/catch2-src/= -MD -MT CMakeFiles/cmTC_92dc1.dir/src.cxx.o -MF CMakeFiles/cmTC_92dc1.dir/src.cxx.o.d -o CMakeFiles/cmTC_92dc1.dir/src.cxx.o -c /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/CMakeFiles/CMakeScratch/TryCompile-fQbHs9/src.cxx
+        Linking CXX executable cmTC_92dc1
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92dc1.dir/link.txt --verbose=1
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_92dc1.dir/src.cxx.o -o cmTC_92dc1
         
       exitCode: 0
 ...

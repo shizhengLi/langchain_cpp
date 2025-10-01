@@ -20,8 +20,6 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -33,10 +31,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/uname"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/uname"
       - "/opt/homebrew/bin/uname"
       - "/opt/homebrew/sbin/uname"
       - "/usr/local/bin/uname"
@@ -44,8 +43,6 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -57,7 +54,10 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
   -
     kind: "message-v1"
     backtrace:
@@ -85,8 +85,6 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/opt/homebrew/bin/"
       - "/opt/homebrew/sbin/"
       - "/usr/local/bin/"
@@ -98,10 +96,11 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/bin/"
+      - "/opt/homebrew/Caskroom/miniforge/base/condabin/"
       - "/Users/lishizheng/.cargo/bin/"
+      - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand/"
     searched_directories:
-      - "/opt/homebrew/Caskroom/miniforge/base/bin/install_name_tool"
-      - "/opt/homebrew/Caskroom/miniforge/base/condabin/install_name_tool"
       - "/opt/homebrew/bin/install_name_tool"
       - "/opt/homebrew/sbin/install_name_tool"
       - "/usr/local/bin/install_name_tool"
@@ -109,8 +108,6 @@ events:
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
-        - "/opt/homebrew/Caskroom/miniforge/base/bin"
-        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/opt/homebrew/bin"
         - "/opt/homebrew/sbin"
         - "/usr/local/bin"
@@ -122,6 +119,9 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/bin"
+        - "/opt/homebrew/Caskroom/miniforge/base/condabin"
         - "/Users/lishizheng/.cargo/bin"
+        - "/Users/lishizheng/Library/Application Support/Void/User/globalStorage/github.copilot-chat/debugCommand"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...

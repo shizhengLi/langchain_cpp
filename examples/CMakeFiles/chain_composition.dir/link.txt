@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -flto=thin -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/chain_composition.dir/chain_composition.cpp.o -o chain_composition  ../liblangchain_cpp.a /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libssl.dylib /opt/homebrew/lib/libcrypto.dylib

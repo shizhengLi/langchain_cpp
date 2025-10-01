@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -flto=thin -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/memory_systems.dir/memory_systems.cpp.o -o memory_systems  ../liblangchain_cpp.a /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd /opt/homebrew/lib/libssl.dylib /opt/homebrew/lib/libcrypto.dylib

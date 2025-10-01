@@ -18,6 +18,7 @@ include_directories(include)
 # Find required packages
 find_package(Threads REQUIRED)
 find_package(CURL REQUIRED)
+find_package(OpenSSL REQUIRED)
 
 # Third-party libraries (header-only)
 add_subdirectory(third_party)
@@ -42,6 +43,9 @@ set(SOURCES
   src/prompts/prompt_template.cpp
   src/memory/memory.cpp
   src/metrics/metrics.cpp
+  src/distributed/distributed_processing.cpp
+  src/persistence/persistence.cpp
+  src/security/security.cpp
 )
 
 # Header files
@@ -68,11 +72,14 @@ set(HEADERS
   include/langchain/prompts/prompt_template.hpp
   include/langchain/memory/memory.hpp
   include/langchain/metrics/metrics.hpp
+  include/langchain/distributed/distributed_processing.hpp
+  include/langchain/persistence/persistence.hpp
+  include/langchain/security/security.hpp
 )
 
 # Create main library
 add_library(langchain_cpp ${SOURCES} ${HEADERS})
-target_link_libraries(langchain_cpp Threads::Threads CURL::libcurl)
+target_link_libraries(langchain_cpp Threads::Threads CURL::libcurl OpenSSL::SSL OpenSSL::Crypto)
 target_include_directories(langchain_cpp PUBLIC include)
 
 # Compiler-specific options

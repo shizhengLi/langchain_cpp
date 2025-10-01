@@ -42,11 +42,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/third_party/cmake_install.cmake")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/tests/cmake_install.cmake")
-endif()
-
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/liblangchain_cpp.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liblangchain_cpp.a" AND
@@ -57,6 +52,11 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/include/langchain")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/lishizheng/Desktop/Code/langchain-impl-cpp/build/examples/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

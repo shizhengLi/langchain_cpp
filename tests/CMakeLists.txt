@@ -22,6 +22,9 @@ target_sources(unit_tests PRIVATE
   unit_tests/test_prompt_templates.cpp
   unit_tests/test_memory.cpp
   unit_tests/test_metrics.cpp
+  unit_tests/test_distributed_processing.cpp
+  unit_tests/test_persistence.cpp
+  unit_tests/test_security.cpp
     unit_tests/main.cpp
 )
 
