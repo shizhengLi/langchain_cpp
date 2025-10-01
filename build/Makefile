@@ -271,6 +271,30 @@ src/core/types.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/core/types.cpp.s
 .PHONY : src/core/types.cpp.s
 
+src/text/text_processor.o: src/text/text_processor.cpp.o
+.PHONY : src/text/text_processor.o
+
+# target to build an object file
+src/text/text_processor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o
+.PHONY : src/text/text_processor.cpp.o
+
+src/text/text_processor.i: src/text/text_processor.cpp.i
+.PHONY : src/text/text_processor.i
+
+# target to preprocess a source file
+src/text/text_processor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.i
+.PHONY : src/text/text_processor.cpp.i
+
+src/text/text_processor.s: src/text/text_processor.cpp.s
+.PHONY : src/text/text_processor.s
+
+# target to generate assembly for a file
+src/text/text_processor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/langchain_cpp.dir/build.make CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.s
+.PHONY : src/text/text_processor.cpp.s
+
 src/utils/logging.o: src/utils/logging.cpp.o
 .PHONY : src/utils/logging.o
 
@@ -390,6 +414,9 @@ help:
 	@echo "... src/core/types.o"
 	@echo "... src/core/types.i"
 	@echo "... src/core/types.s"
+	@echo "... src/text/text_processor.o"
+	@echo "... src/text/text_processor.i"
+	@echo "... src/text/text_processor.s"
 	@echo "... src/utils/logging.o"
 	@echo "... src/utils/logging.i"
 	@echo "... src/utils/logging.s"

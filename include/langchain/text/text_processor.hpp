@@ -36,17 +36,13 @@ public:
 private:
     Config config_;
     std::unordered_set<std::string> stopwords_;
-    std::locale locale_;
-    std::wregex word_regex_;
-    std::wregex punctuation_regex_;
-    std::wregex number_regex_;
 
 public:
     /**
      * @brief Constructor
      * @param config Processing configuration
      */
-    explicit TextProcessor(const Config& config = Config{});
+    explicit TextProcessor(const Config& config);
 
     /**
      * @brief Tokenize text into individual tokens
@@ -125,11 +121,7 @@ public:
     const Config& get_config() const { return config_; }
 
 private:
-    void initialize_regexes();
     void initialize_stopwords();
-    std::wstring utf8_to_wstring(const std::string& str);
-    std::string wstring_to_utf8(const std::wstring& wstr);
-    bool is_punctuation(wchar_t ch);
     bool is_valid_token(const std::string& token);
 };
 

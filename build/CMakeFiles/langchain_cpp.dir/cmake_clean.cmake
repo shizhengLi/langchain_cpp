@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/langchain_cpp.dir/src/core/config.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/core/types.cpp.o"
   "CMakeFiles/langchain_cpp.dir/src/core/types.cpp.o.d"
+  "CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o"
+  "CMakeFiles/langchain_cpp.dir/src/text/text_processor.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/utils/logging.cpp.o"
   "CMakeFiles/langchain_cpp.dir/src/utils/logging.cpp.o.d"
   "CMakeFiles/langchain_cpp.dir/src/utils/memory_pool.cpp.o"

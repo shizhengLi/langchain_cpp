@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_logging.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_logging.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_logging.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_memory_pool.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory_pool.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_memory_pool.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_simd_ops.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_simd_ops.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_simd_ops.cpp.o.d"
+  "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_text_processor.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.o.d"
   "/Users/lishizheng/Desktop/Code/langchain-impl-cpp/tests/unit_tests/test_thread_pool.cpp" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_thread_pool.cpp.o" "gcc" "tests/CMakeFiles/unit_tests.dir/unit_tests/test_thread_pool.cpp.o.d"
   )
 

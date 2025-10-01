@@ -353,6 +353,30 @@ unit_tests/test_simd_ops.cpp.s:
 	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_simd_ops.cpp.s
 .PHONY : unit_tests/test_simd_ops.cpp.s
 
+unit_tests/test_text_processor.o: unit_tests/test_text_processor.cpp.o
+.PHONY : unit_tests/test_text_processor.o
+
+# target to build an object file
+unit_tests/test_text_processor.cpp.o:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.o
+.PHONY : unit_tests/test_text_processor.cpp.o
+
+unit_tests/test_text_processor.i: unit_tests/test_text_processor.cpp.i
+.PHONY : unit_tests/test_text_processor.i
+
+# target to preprocess a source file
+unit_tests/test_text_processor.cpp.i:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.i
+.PHONY : unit_tests/test_text_processor.cpp.i
+
+unit_tests/test_text_processor.s: unit_tests/test_text_processor.cpp.s
+.PHONY : unit_tests/test_text_processor.s
+
+# target to generate assembly for a file
+unit_tests/test_text_processor.cpp.s:
+	cd /Users/lishizheng/Desktop/Code/langchain-impl-cpp/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.s
+.PHONY : unit_tests/test_text_processor.cpp.s
+
 unit_tests/test_thread_pool.o: unit_tests/test_thread_pool.cpp.o
 .PHONY : unit_tests/test_thread_pool.o
 
@@ -412,6 +436,9 @@ help:
 	@echo "... unit_tests/test_simd_ops.o"
 	@echo "... unit_tests/test_simd_ops.i"
 	@echo "... unit_tests/test_simd_ops.s"
+	@echo "... unit_tests/test_text_processor.o"
+	@echo "... unit_tests/test_text_processor.i"
+	@echo "... unit_tests/test_text_processor.s"
 	@echo "... unit_tests/test_thread_pool.o"
 	@echo "... unit_tests/test_thread_pool.i"
 	@echo "... unit_tests/test_thread_pool.s"

@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/unit_tests.dir/unit_tests/test_memory_pool.cpp.o.d"
   "CMakeFiles/unit_tests.dir/unit_tests/test_simd_ops.cpp.o"
   "CMakeFiles/unit_tests.dir/unit_tests/test_simd_ops.cpp.o.d"
+  "CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.o"
+  "CMakeFiles/unit_tests.dir/unit_tests/test_text_processor.cpp.o.d"
   "CMakeFiles/unit_tests.dir/unit_tests/test_thread_pool.cpp.o"
   "CMakeFiles/unit_tests.dir/unit_tests/test_thread_pool.cpp.o.d"
   "unit_tests"
